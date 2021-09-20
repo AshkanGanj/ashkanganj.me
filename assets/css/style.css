@@ -43,6 +43,12 @@ h1, h2, h3, h4, h5, h6 {
 .card-img-top{
   height: 160px !important;
 }
+.card-title{
+  font-weight: bold;
+}
+.card-text{
+  height: 110px;
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
