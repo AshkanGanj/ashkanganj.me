@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
 .bottem-line-section{
   border-bottom: 1px solid;
 }
-.card {
+.hover-zoom {
   transition: transform 0.2s ease;
   border-radius: 10px !important;
   /* box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
@@ -37,9 +37,10 @@ h1, h2, h3, h4, h5, h6 {
   border: 0;
   margin-bottom: 1.5em; */
 }
-.card:hover {
+.hover-zoom:hover {
   transform: scale(1.05);
 }
+
 /* .card-img-top{
   height: 160px !important;
 } */
