@@ -83,6 +83,10 @@ h6 {
   border-color: #0563bb;
   color: #fff;
 }
+.blur{
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.2);
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -331,7 +335,7 @@ h6 {
   /* height: 100vh; */
   min-height: -webkit-fill-available;
   min-height: 100vh;
-  /* background: url("../img/hero-bg.jpg") top right no-repeat; */
+  background: url("../img/DSC00460.jpg") top right no-repeat;
   /* background: url("../img/bg.jpg") top right no-repeat; */
   background-size: cover;
   position: relative;
