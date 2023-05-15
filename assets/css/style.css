@@ -918,8 +918,3 @@ iframe {
   transform: translateY(-50%);
   /* opacity: 0; */
 }
-@media (min-width: 768px) {
-  .card img {
-    height: 11em;
-  }
-}
