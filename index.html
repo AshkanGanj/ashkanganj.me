@@ -21,14 +21,13 @@
   <!-- Vendor CSS Files -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- CSS only -->
+  <link rel="stylesheet" href="assets/vendor/OwlCarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/vendor/OwlCarousel/assets/owl.theme.default.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-  <script src="assets/js/carousel.js"></script>
 </head>
 
 <body>
@@ -165,9 +164,9 @@
                   <h5>2018 - 2022</h5>
                   <p><em>University of Mohaghegh Ardabili , Ardabil, IR</em></p>
                   <p class="text-justify">
-                    <ul>
-                      <li>Awarded distinguished student.</li>
-                    </ul>
+                  <ul>
+                    <li>Awarded distinguished student.</li>
+                  </ul>
                   </p>
                   <a href="https://www.timeshighereducation.com/world-university-rankings/university-mohaghegh-ardabili"
                     class="btn btn-outline-primary btn-sm">Ranking</a>
@@ -409,10 +408,10 @@
           <p></p>
         </div>
         <div class="row">
-          <div class="col-bg-6 col-md-6 col-sm-12">
+          <div class="col-bg-6 col-md-8 col-12">
             <div class="card mb-3" style="max-width: 100%;">
               <div class="row g-0">
-                <div class="col-md-4 col-sm-12">
+                <div class="col-md-4 d-sm-none d-md-block">
                   <img src="assets/img/projects/LR-net.png" class="img-fluid rounded-start">
                 </div>
                 <div class="col-md-8 col-sm-12">
@@ -441,10 +440,10 @@
         <div class="section-title">
           <h2>Selected Projects</h2>
         </div>
-        <div id="carousel" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="cards-wrapper">
+        <div class="owl-carousel owl-theme owl-loaded">
+          <div class="owl-stage-outer">
+            <div class="owl-stage">
+              <div class="owl-item">
                 <div class="card hover-zoom shadow-sm" style="width: 100%;">
                   <img src="assets/img/projects/segment.jpg" class="card-img-top lozad" loading="lazy" alt="...">
                   <div class="card-body">
@@ -456,8 +455,8 @@
                       class="btn btn-outline-dark btn-sm"><i class="bi bi-github"> read more</i></a>
                   </div>
                 </div>
-
-
+              </div>
+              <div class="owl-item">
                 <div class="card hover-zoom shadow-sm" style="width: 100%;">
                   <img src="assets/img/projects/pneumonia.jpg" class="card-img-top lozad" loading="lazy" alt="...">
                   <div class="card-body">
@@ -470,8 +469,8 @@
                       class="btn btn-outline-dark btn-sm"><i class="bi bi-github"> read more</i></a>
                   </div>
                 </div>
-
-
+              </div>
+              <div class="owl-item">
                 <div class="card hover-zoom shadow-sm" style="width: 100%;">
                   <img src="assets/img/projects/cifar-10.jpg" class="card-img-top lozad" loading="lazy" alt="...">
                   <div class="card-body">
@@ -484,12 +483,8 @@
                       class="btn btn-outline-dark btn-sm"><i class="bi bi-github"> read more</i></a>
                   </div>
                 </div>
-
               </div>
-            </div>
-            <div class="carousel-item">
-              <div class="cards-wrapper">
-
+              <div class="owl-item">
                 <div class="card hover-zoom shadow-sm" style="width: 100%;">
                   <img src="assets/img/projects/Search-Algorithms-in-AI.jpg" class="card-img-top lozad" loading="lazy"
                     alt="...">
@@ -502,8 +497,8 @@
                       class="btn btn-outline-dark btn-sm"><i class="bi bi-github"> Read more</i></a>
                   </div>
                 </div>
-
-
+              </div>
+              <div class="owl-item">
                 <div class="card hover-zoom shadow-sm" style="width: 100%;">
                   <img src="assets/img/projects/compiler.jpg" class="card-img-top lozad" loading="lazy" alt="...">
                   <div class="card-body">
@@ -515,9 +510,9 @@
                     <a href="https://github.com/AshkanGanj/2-phase-compiler" class="btn btn-outline-dark btn-sm"><i
                         class="bi bi-github"> read more</i></a>
                   </div>
-
                 </div>
-
+              </div>
+              <div class="owl-item">
                 <div class="card hover-zoom shadow-sm" style="width: 100%;">
                   <img src="assets/img/projects/assembler.jpg" class="card-img-top lozad" loading="lazy" alt="...">
                   <div class="card-body">
@@ -529,10 +524,7 @@
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="carousel-item">
-              <div class="cards-wrapper">
+              <div class="owl-item">
                 <div class="card hover-zoom shadow-sm" style="width: 100%;">
                   <img src="assets/img/projects/timeTracker.jpg" class="card-img-top lozad" loading="lazy" alt="...">
                   <div class="card-body">
@@ -545,6 +537,8 @@
                         class="bi bi-github"> read more</i></a>
                   </div>
                 </div>
+              </div>
+              <div class="owl-item">
                 <div class="card hover-zoom shadow-sm" style="width: 100%;">
                   <img src="assets/img/projects/music.jpg" class="card-img-top lozad" loading="lazy" alt="...">
                   <div class="card-body">
@@ -557,6 +551,8 @@
                         class="bi bi-github"> read more</i></a>
                   </div>
                 </div>
+              </div>
+              <div class="owl-item">
                 <div class="card hover-zoom shadow-sm" style="width: 100%;">
                   <img src="assets/img/projects/dashboard.jpg" class="card-img-top lozad" loading="lazy" alt="...">
                   <div class="card-body">
@@ -570,19 +566,9 @@
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
-          <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-
-            <!-- <span class="carousel-control-prev-icon"><i class="bi bi-arrow-left-square-fill"></i></span> -->
-            <!-- <span class="sr-only">Previous</span> -->
-          </a>
-          <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <!-- <span class="sr-only">Next</span> -->
-          </a>
+          
         </div>
       </div>
 
@@ -736,24 +722,35 @@
   </footer><!-- End Footer -->
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
+
+
   <!-- Vendor JS Files -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <!-- <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script> -->
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <!-- JavaScript Bundle with Popper -->
+    crossorigin="anonymous"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
 
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/OwlCarousel/owl.carousel.min.js"></script>
+
+
+
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/carousel.js"></script>
+
 </body>
 
 </html>
