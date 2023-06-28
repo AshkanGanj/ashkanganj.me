@@ -1,0 +1,35 @@
+@import './base.css';
+
+
+.text-justify{
+    text-align: justify;
+}
+
+/* create a rectagular botton css with gray color and hover effect */
+
+
+.badge-btn{
+    background-color: #e0e0e0;
+    border-radius: 0x;
+    padding: 2px 7px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #e0e0e0;
+    margin-right: 10px;
+}
+
+.badge-btn:hover{
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+
+.date{
+    font-style: italic;
+    pointer-events: none;
+
+}
