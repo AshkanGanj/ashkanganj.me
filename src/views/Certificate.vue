@@ -26,43 +26,43 @@ export default {
         {
           course: "Machine Learning",
           issue: "STANFORD ONLINE",
-          image: "src/assets/img/Certs/machine-learning.jpg",
+          image: "/src/assets/img/Certs/machine-learning.jpg",
           link: "https://www.coursera.org/account/accomplishments/certificate/CERTIFICATE_ID"
         },
         {
           course: "Neural Networks and Deep Learning",
           issue: "DEEPLEARNING.AI",
-          image: "src/assets/img/Certs/neural-networks.jpg",
+          image: "/src/assets/img/Certs/neural-networks.jpg",
           link: "https://www.coursera.org/account/accomplishments/certificate/CERTIFICATE_ID"
         },
         {
           course: "Improving Deep Neural Networks",
           issue: "DEEPLEARNING.AI",
-          image: "src/assets/img/Certs/improve.jpg",
+          image: "/src/assets/img/Certs/improve.jpg",
           link: "https://www.coursera.org/account/accomplishments/certificate/CERTIFICATE_ID"
         },
         {
           course: "Structuring Machine Learning Projects",
           issue: "DEEPLEARNING.AI",
-          image: "src/assets/img/Certs/structure-neural.jpg",
+          image: "/src/assets/img/Certs/structure-neural.jpg",
           link: "https://www.coursera.org/account/accomplishments/certificate/CERTIFICATE_ID"
         },
         {
           course: "Convolutional Neural Networks",
           issue: "DEEPLEARNING.AI",
-          image: "src/assets/img/Certs/cnn.jpg",
+          image: "/src/assets/img/Certs/cnn.jpg",
           link: "https://www.coursera.org/account/accomplishments/certificate/CERTIFICATE_ID"
         },
         {
           course: "Sequence Model",
-          issue: "2023",
-          image: "src/assets/img/Certs/Sequence model.jpg",
+          issue: "DEEPLEARNING.AI",
+          image: "/src/assets/img/Certs/Sequence model.jpg",
           link: "https://www.coursera.org/account/accomplishments/certificate/CERTIFICATE_ID"
         },
         {
           course: "Deep learning Specialization",
           issue: "DEEPLEARNING.AI",
-          image: "src/assets/img/Certs/Deep learning.jpg",
+          image: "/src/assets/img/Certs/Deep learning.jpg",
           link: "https://www.coursera.org/account/accomplishments/certificate/CERTIFICATE_ID"
         }
       ]

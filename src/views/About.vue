@@ -92,13 +92,13 @@ const open = (url) => {
       window.open("https://www.linkedin.com/in/ashkan-ganj/");
       break;
     case "github":
-      window.open("");
+      window.open("https://github.com/AshkanGanj");
       break;
     case "scholar":
       window.open("");
       break;
     case "twitter":
-      window.open("");
+      window.open("https://twitter.com/GanjAshkan");
       break;
     default:
       break;
