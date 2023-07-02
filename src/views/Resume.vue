@@ -6,7 +6,7 @@
   
       <div class="timeline py-2">
         <div class="row">
-          <div class="col-md-6 timeline-item" v-for="(category, index) in resumeItems" :key="index">
+          <div class="col-md-6 col-sm-12 timeline-item" v-for="(category, index) in resumeItems" :key="index">
             <div class="timeline-content shadow-sm">
               <!-- <h3 class="resume-title">{{ category.name }}</h3> -->
             <div class="resume-item" v-for="(item, itemIndex) in category.items" :key="itemIndex" :class="{ 'border-bottom mb-3': itemIndex !== category.items.length - 1 }">
@@ -33,86 +33,83 @@
 </template>
 
   
-  <style scoped>
-  .section-title{
-    margin : 0 auto;
-    text-align: center;
-  }
-  .timeline {
-    position: relative;
-    margin: 40px 0;
-    margin-bottom: 0;
-  }
-  
-  .timeline-container {
-    position: relative;
-    width: 100%;
-  }
-  
-  .timeline-item {
-    position: relative;
-    /* width: 100%; */
-    margin-bottom: 4rem;
-  }
-  
-  .timeline-content {
-    position: relative;
-    width: 100%;
-    padding: 15px;
-    background-color: #ffffff;
-    border-radius: 5px;
-  }
-  
-  .timeline-time {
-    position: absolute;
-    top: -25px;
-    left: 0;
-  }
-  
-  .timeline-time h4 {
-    margin: 0;
-    font-size: 16px;
-    font-weight: bold;
-    color: #0563bb;
-  }
-  
-  .timeline-body {
-    /* padding-left: 30px; */
-  }
-  
-  .timeline-body h4 {
-    margin-top: 0;
-    font-size: 18px;
-    font-weight: 600;
-    color: #0563bb;
-  }
-  
-  .timeline-body p {
-    margin-bottom: 0;
-  }
-  
-  .timeline-body ul {
-    list-style: none;
-    padding-left: 15px;
-  }
-  
-  .timeline-body ul li {
-    position: relative;
-    padding-left: 15px;
-    margin-bottom: 10px;
-  }
-  
-  .timeline-body ul li:before {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 0;
-    width: 8px;
-    height: 8px;
-    background-color: #0563bb;
-    border-radius: 50%;
-  }
-  </style>
+<style scoped>
+.section-title{
+  margin : 0 auto;
+  text-align: center;
+}
+.timeline {
+  position: relative;
+  margin: 40px 0;
+  margin-bottom: 0;
+}
+
+.timeline-container {
+  position: relative;
+  width: 100%;
+}
+
+.timeline-item {
+  position: relative;
+  /* width: 100%; */
+  margin-bottom: 4rem;
+}
+
+.timeline-content {
+  position: relative;
+  width: 100%;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.timeline-time {
+  position: absolute;
+  top: -25px;
+  left: 0;
+}
+
+.timeline-time h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #0563bb;
+}
+
+
+.timeline-body h4 {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0563bb;
+}
+
+.timeline-body p {
+  margin-bottom: 0;
+}
+
+.timeline-body ul {
+  list-style: none;
+  padding-left: 15px;
+}
+
+.timeline-body ul li {
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+
+.timeline-body ul li:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #0563bb;
+  border-radius: 50%;
+}
+</style>
   
   <script setup>
   import { ref } from 'vue';
@@ -142,19 +139,6 @@
       ]
     },
     {
-      name: 'Job Experience',
-      items: [
-        {
-          title: 'Front-End Developer',
-          date: '2020 - 2021',
-          institution: 'Access Endless Communication(AEC), Tehran, IR',
-          details: [
-            'Head of Front-End Team',
-          ]
-        }
-      ]
-    },
-    {
       name: 'Academic Experiences',
       items: [
         {
@@ -174,6 +158,19 @@
             'Algorithm and Data Structure (Spring 2021)',
             'Software Engineering (Fall 2021)',
             'Discrete Mathematics (Spring 2020)'
+          ]
+        }
+      ]
+    },
+    {
+      name: 'Job Experience',
+      items: [
+        {
+          title: 'Front-End Developer',
+          date: '2020 - 2021',
+          institution: 'Access Endless Communication(AEC), Tehran, IR',
+          details: [
+            'Head of Front-End Team',
           ]
         }
       ]

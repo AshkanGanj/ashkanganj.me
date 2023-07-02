@@ -5,7 +5,7 @@
         <img src="../assets/img/main.jpg" alt="Ashkan Ganj" class="img-fluid shadow-sm" />
       </div>
       <div class="col-md-8">
-        <h1>Hello!</h1>
+        <h1 style="font-family: 'Work Sans';">Hello!</h1>
         <p class="text-justify">
           I am a first-year computer science MS/Ph.D student at Worcester
           Polytechnic Institute (WPI), and a proud member of the Cake Lab
@@ -107,6 +107,9 @@ const open = (url) => {
 </script>
 
 <style scoped>
+p{
+  font-size: large;
+}
 .list-move {
   transition: transform 0.5s;
 }
