@@ -59,8 +59,9 @@
   position: relative;
   width: 100%;
   padding: 15px;
-  background-color: #ffffff;
   border-radius: 5px;
+  background-color: #fffefe;
+
 }
 
 .timeline-time {

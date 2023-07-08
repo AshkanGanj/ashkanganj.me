@@ -4,24 +4,25 @@
             Publications
         </h2>
         <div class="row">
-            <div class="publication-item shadow-sm col-md-6" v-for="(publication, index) in publications" :key="index">
-                <h3>{{ publication.title }}</h3>
-                <div class="d-flex">
-                    <span class="badge-btn date">{{ publication.date }}</span>
-                    <a :href="publication.link" target="_blank" class="badge-btn">Paper</a>
-                    <a :href="publication.github" target="_blank" class="badge-btn">Code</a>
+            <div class="col-md-6" v-for="(publication, index) in publications" :key="index">
+                <div class="publication-item shadow-sm">
+                    <h3>{{ publication.title }}</h3>
+                    <div class="d-flex">
+                        <span class="badge-btn date">{{ publication.date }}</span>
+                        <a :href="publication.link" target="_blank" class="badge-btn">Paper</a>
+                        <a :href="publication.github" target="_blank" class="badge-btn">Code</a>
+                    </div>
+                    <p></p>
+                    <p>
+                        <em>Published: {{ publication.journal }}</em>
+                    </p>
+                    <p>Authors: {{ publication.authors.join(", ") }}</p>
+                    <!-- <p class="text-justify">{{ publication.abstract }}</p> -->
                 </div>
-                <p></p>
-                <p>
-                    <em>Published: {{ publication.journal }}</em>
-                </p>
-                <p>Authors: {{ publication.authors.join(", ") }}</p>
-                <!-- <p class="text-justify">{{ publication.abstract }}</p> -->
             </div>
         </div>
     </div>
 </template>
-
 <script>
 export default {
     data() {
@@ -42,7 +43,7 @@ export default {
                     abstract: "Abstract for publication 1...",
                     link: "https://link.springer.com/article/10.1007/s40998-023-00618-5",
                     github: "https://github.com/AshkanGanj/LR-Net"
-                },
+                }
             ],
         };
     },
@@ -54,12 +55,14 @@ export default {
     text-align: center;
 }
 
+
 .publication-item {
     background-color: #f7f8f9;
     border-radius: 5px;
     padding: 15px;
     margin-bottom: 20px;
 }
+
 
 .publication-item h3 {
     margin-top: 0;

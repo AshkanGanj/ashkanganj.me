@@ -26,43 +26,43 @@ export default {
         {
           course: "Machine Learning",
           issue: "STANFORD ONLINE",
-          image: "/src/assets/img/Certs/machine-learning.jpg",
+          image: '/assets/img/machine-learning.jpg',
           link: "https://www.coursera.org/account/accomplishments/certificate/CERTIFICATE_ID"
         },
         {
           course: "Neural Networks and Deep Learning",
           issue: "DEEPLEARNING.AI",
-          image: "/src/assets/img/Certs/neural-networks.jpg",
+          image: "@/assets/img/neural-networks.jpg",
           link: "https://www.coursera.org/account/accomplishments/certificate/CERTIFICATE_ID"
         },
         {
           course: "Improving Deep Neural Networks",
           issue: "DEEPLEARNING.AI",
-          image: "/src/assets/img/Certs/improve.jpg",
+          image: "@/assets/img/improve.jpg",
           link: "https://www.coursera.org/account/accomplishments/certificate/CERTIFICATE_ID"
         },
         {
           course: "Structuring Machine Learning Projects",
           issue: "DEEPLEARNING.AI",
-          image: "/src/assets/img/Certs/structure-neural.jpg",
+          image: "@/assets/img/structure-neural.jpg",
           link: "https://www.coursera.org/account/accomplishments/certificate/CERTIFICATE_ID"
         },
         {
           course: "Convolutional Neural Networks",
           issue: "DEEPLEARNING.AI",
-          image: "/src/assets/img/Certs/cnn.jpg",
+          image: "@/assets/img/cnn.jpg",
           link: "https://www.coursera.org/account/accomplishments/certificate/CERTIFICATE_ID"
         },
         {
           course: "Sequence Model",
           issue: "DEEPLEARNING.AI",
-          image: "/src/assets/img/Certs/Sequence model.jpg",
+          image: "@/assets/img/Sequence model.jpg",
           link: "https://www.coursera.org/account/accomplishments/certificate/CERTIFICATE_ID"
         },
         {
           course: "Deep learning Specialization",
           issue: "DEEPLEARNING.AI",
-          image: "/src/assets/img/Certs/Deep learning.jpg",
+          image: "@/assets/img/Deep learning.jpg",
           link: "https://www.coursera.org/account/accomplishments/certificate/CERTIFICATE_ID"
         }
       ]
