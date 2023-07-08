@@ -19,6 +19,14 @@
 </template>
 
 <script>
+import MachineLearningImage from '@/assets/img/machine-learning.jpg';
+import NeuralNetworksImage from '@/assets/img/neural-networks.jpg';
+import ImproveImage from '@/assets/img/improve.jpg';
+import StructureNeuralImage from '@/assets/img/structure-neural.jpg';
+import CNNImage from '@/assets/img/cnn.jpg';
+import SequenceModelImage from '@/assets/img/Sequence model.jpg';
+import DeepLearningImage from '@/assets/img/Deep learning.jpg';
+
 export default {
   data() {
     return {
@@ -26,43 +34,43 @@ export default {
         {
           course: "Machine Learning",
           issue: "STANFORD ONLINE",
-          image: '/assets/img/machine-learning.jpg',
+          image: MachineLearningImage,
           link: "https://www.coursera.org/account/accomplishments/certificate/CERTIFICATE_ID"
         },
         {
           course: "Neural Networks and Deep Learning",
           issue: "DEEPLEARNING.AI",
-          image: "@/assets/img/neural-networks.jpg",
+          image: NeuralNetworksImage,
           link: "https://www.coursera.org/account/accomplishments/certificate/CERTIFICATE_ID"
         },
         {
           course: "Improving Deep Neural Networks",
           issue: "DEEPLEARNING.AI",
-          image: "@/assets/img/improve.jpg",
+          image: ImproveImage,
           link: "https://www.coursera.org/account/accomplishments/certificate/CERTIFICATE_ID"
         },
         {
           course: "Structuring Machine Learning Projects",
           issue: "DEEPLEARNING.AI",
-          image: "@/assets/img/structure-neural.jpg",
+          image: StructureNeuralImage,
           link: "https://www.coursera.org/account/accomplishments/certificate/CERTIFICATE_ID"
         },
         {
           course: "Convolutional Neural Networks",
           issue: "DEEPLEARNING.AI",
-          image: "@/assets/img/cnn.jpg",
+          image: CNNImage,
           link: "https://www.coursera.org/account/accomplishments/certificate/CERTIFICATE_ID"
         },
         {
           course: "Sequence Model",
           issue: "DEEPLEARNING.AI",
-          image: "@/assets/img/Sequence model.jpg",
+          image: SequenceModelImage,
           link: "https://www.coursera.org/account/accomplishments/certificate/CERTIFICATE_ID"
         },
         {
           course: "Deep learning Specialization",
           issue: "DEEPLEARNING.AI",
-          image: "@/assets/img/Deep learning.jpg",
+          image: DeepLearningImage,
           link: "https://www.coursera.org/account/accomplishments/certificate/CERTIFICATE_ID"
         }
       ]
@@ -70,6 +78,7 @@ export default {
   }
 };
 </script>
+
 
 <style scoped>
 .section-title {
@@ -89,7 +98,7 @@ export default {
 
 .card-img-top {
   width: 100%;
-  height: 250px;
+  height: 270px;
   object-fit: cover;
 }
 
