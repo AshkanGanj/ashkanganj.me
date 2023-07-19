@@ -7,7 +7,7 @@
       <div class="timeline py-2">
         <div class="row">
           <div class="col-md-6 col-sm-12 timeline-item" v-for="(category, index) in resumeItems" :key="index">
-            <div class="timeline-content shadow-sm">
+            <div class="timeline-content border shadow-sm">
               <!-- <h3 class="resume-title">{{ category.name }}</h3> -->
             <div class="resume-item" v-for="(item, itemIndex) in category.items" :key="itemIndex" :class="{ 'border-bottom mb-3': itemIndex !== category.items.length - 1 }">
                 <div class="timeline-time">

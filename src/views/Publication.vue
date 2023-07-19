@@ -5,7 +5,7 @@
         </h2>
         <div class="row">
             <div class="col-md-6" v-for="(publication, index) in publications" :key="index">
-                <div class="publication-item shadow-sm">
+                <div class="publication-item shadow-sm border">
                     <h3>{{ publication.title }}</h3>
                     <div class="d-flex">
                         <span class="badge-btn date">{{ publication.date }}</span>
