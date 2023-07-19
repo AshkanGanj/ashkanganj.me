@@ -134,7 +134,7 @@
           institution: 'University of Mohaghegh Ardabili, Ardabil, IR',
           details: [
             'Awarded distinguished student.',
-            '<span class="fw-bold">Final Project:</span> LR-Net: A Block-based Convolutional Neural Network for Low-Resolution Image Classification (<a href="https://arxiv.org/abs/2207.09531">Link</a>)'
+            '<span class="fw-bold">Final Project:</span> LR-Net: A Block-based Convolutional Neural Network for Low-Resolution Image Classification (<a href="https://link.springer.com/article/10.1007/s40998-023-00618-5">Link</a>)'
           ]
         }
       ]

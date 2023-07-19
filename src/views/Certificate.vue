@@ -5,7 +5,7 @@
       <div class="col-lg-4 col-md-6 mb-4 py-4" v-for="(certificate, index) in certificates" :key="index">
         <div class="card">
           <div class="img-container">
-            <img :src="certificate.image" class="card-img-top" alt="Certificate image">
+            <img :src="certificate.image" class="card-img-top " alt="Certificate image">
             <div class="card-info">
               <h5 class="card-title">{{ certificate.course }}</h5>
               <p class="card-text"><small class="">Issued by {{ certificate.issue }}</small></p>
@@ -100,6 +100,7 @@ export default {
   width: 100%;
   height: 270px;
   object-fit: cover;
+  border-radius: 0;
 }
 
 .card-info {

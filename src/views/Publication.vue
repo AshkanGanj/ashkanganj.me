@@ -10,16 +10,29 @@
                     <div class="d-flex">
                         <span class="badge-btn date">{{ publication.date }}</span>
                         <span class="me-2 text-primary">|</span>
-                        <a :href="publication.link" target="_blank" class="badge-btn">Paper</a>
-                        <a :href="publication.arxiv" target="_blank" class="badge-btn">arxiv</a>
-                        <a :href="publication.github" target="_blank" class="badge-btn">Code</a>
+                        <a v-if="publication.link" :href="publication.link" target="_blank" class="badge-btn">Paper</a>
+                        <a v-if="publication.website" :href="publication.website" target="_blank" class="badge-btn">Project Website</a>
+                        <a v-if="publication.arxiv" :href="publication.arxiv" target="_blank" class="badge-btn">arxiv</a>
+                        <a v-if="publication.github" :href="publication.github" target="_blank" class="badge-btn">Code</a>
                     </div>
                     <p></p>
                     <p>
                         <em>Published: {{ publication.journal }}</em>
                     </p>
-                    <p>Authors: {{ publication.authors.join(", ") }}</p>
-                    <!-- <p class="text-justify">{{ publication.abstract }}</p> -->
+                    <p>
+                        Authors: 
+                        <template v-for="(author, index) in publication.authors" :key="index">
+                            <span>
+                                <template v-if="author === 'Ashkan Ganj'">
+                                    <b>{{ author }}</b>
+                                </template>
+                                <template v-else>
+                                    {{ author }}
+                                </template>
+                                <template v-if="index < publication.authors.length - 1">, </template>
+                            </span>
+                        </template>
+                    </p>
                 </div>
             </div>
         </div>
@@ -38,14 +51,30 @@ export default {
                         "Iranian Journal of Science and Technology, Transactions of Electrical Engineering ",
                     authors: [
                         "Ashkan Ganj",
+                        "Mohsen Ebadpour",
                         "Mahdi Darvish",
                         "Hamid Bahador",
-                        " Mohsen Ebadpour",
                     ],
                     arxiv:"https://arxiv.org/abs/2207.09531",
-                    abstract: "Abstract for publication 1...",
                     link: "https://link.springer.com/article/10.1007/s40998-023-00618-5",
                     github: "https://github.com/AshkanGanj/LR-Net"
+                },
+                {
+                    title:
+                        "Toward Scalable and Controllable AR Experimentation",
+                    date: "July-2023",
+                    journal:
+                        "Pre-Print is Available on arXiv",
+                    authors: [
+                        "Ashkan Ganj",
+                        "Yiqin Zhao",
+                        "Federico Galbiati",
+                        "Tian Guo",
+                    ],
+                    arxiv:"https://arxiv.org/abs/2307.08587",
+                    link: "",
+                    website: "https://cake.wpi.edu/expar/",
+                    github: ""
                 }
             ],
         };
