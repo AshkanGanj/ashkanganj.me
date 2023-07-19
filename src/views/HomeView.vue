@@ -1,5 +1,5 @@
 <script setup>
-import Header from "../components/header.vue";
+import Header from "../components/Header.vue";
 import About from "../views/About.vue";
 import Resume from "../views/Resume.vue";
 import Publication from "../views/Publication.vue";
@@ -25,8 +25,8 @@ import Certificate from "../views/Certificate.vue";
     <section>
       <Certificate />
     </section>
-    <footer class="text-light bg-secondary border-top">
-      <div class="d-flex align-items-center justify-content-center">
+    <footer class="bg-light">
+      <div class="d-flex align-items-center justify-content-center border-top container">
         <ul class="my-0">
           <ol>&copy; Ashkan Ganj 2023</ol>
         </ul>

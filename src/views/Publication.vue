@@ -9,7 +9,9 @@
                     <h3>{{ publication.title }}</h3>
                     <div class="d-flex">
                         <span class="badge-btn date">{{ publication.date }}</span>
+                        <span class="me-2 text-primary">|</span>
                         <a :href="publication.link" target="_blank" class="badge-btn">Paper</a>
+                        <a :href="publication.arxiv" target="_blank" class="badge-btn">arxiv</a>
                         <a :href="publication.github" target="_blank" class="badge-btn">Code</a>
                     </div>
                     <p></p>
@@ -40,6 +42,7 @@ export default {
                         "Hamid Bahador",
                         " Mohsen Ebadpour",
                     ],
+                    arxiv:"https://arxiv.org/abs/2207.09531",
                     abstract: "Abstract for publication 1...",
                     link: "https://link.springer.com/article/10.1007/s40998-023-00618-5",
                     github: "https://github.com/AshkanGanj/LR-Net"

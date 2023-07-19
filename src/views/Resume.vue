@@ -71,8 +71,8 @@
 }
 
 .timeline-time h4 {
-  margin: 0;
-  font-size: 16px;
+  margin: -5px 0px;
+  font-size: 17px;
   font-weight: bold;
   color: #0563bb;
 }

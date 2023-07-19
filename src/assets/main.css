@@ -32,3 +32,9 @@
     pointer-events: none;
 
 }
+
+p a{
+    text-decoration: none !important;
+    color: #0d6efd !important;
+    font-weight: 600 !important;
+}

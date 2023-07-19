@@ -7,9 +7,9 @@
       <div class="col-md-8">
         <h1 style="font-family: 'Work Sans';">Hello!</h1>
         <p class="text-justify">
-          I am a first-year computer science MS/Ph.D student at Worcester
-          Polytechnic Institute (WPI), and a proud member of the Cake Lab
-          research group advised by my kind advisor Prof. Tian Guo.
+          I am a first-year computer science MS/Ph.D student at <span><a href="https://www.wpi.edu/" target="_blank">Worcester
+          Polytechnic Institute (WPI)</a></span> , and a proud member of the <span><a href="https://cake.wpi.edu/">Cake Lab</a></span> 
+          research group advised by my kind advisor <span><a href="https://tianguo.info/" target="_blank"> Prof. Tian Guo</a></span>.
         </p>
         <p class="text-justify">
           My research interests lie in the field of Computer Vision,
