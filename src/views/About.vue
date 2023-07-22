@@ -24,39 +24,39 @@
         </p>
         <div class="text-center pb-4">
           <button
-            class="btn btn-outline-secondary mx-2"
+            class="btn btn-outline-secondary mx-1"
             @click="open('linkedin')"
             v-tooltip.bottom="'LinkedIn'"
           >
-            <i class="bi bi-linkedin"></i>
+            <i class="fs-5 bi bi-linkedin"></i>
           </button>
           <button
-            class="btn btn-outline-secondary mx-2"
+            class="btn btn-outline-secondary mx-1"
             @click="open('github')"
             v-tooltip.bottom="'GitHub'"
           >
-            <i class="bi bi-github"></i>
+            <i class="fs-5 bi bi-github"></i>
           </button>
           <button
-            class="btn btn-outline-secondary mx-2"
+            class="btn btn-outline-secondary mx-1"
             @click="open('scholar')"
             v-tooltip.bottom="'Google scholar'"
           >
-            <i class="bi bi-google"></i>
+            <i class="fs-5 bi bi-google"></i>
           </button>
           <button
-            class="btn btn-outline-secondary mx-2"
+            class="btn btn-outline-secondary mx-1"
             @click="open('twitter')"
             v-tooltip.bottom="'twitter'"
           >
-            <i class="bi bi-twitter"></i>
+            <i class="fs-5 bi bi-twitter"></i>
           </button>
           <button
-            class="btn btn-outline-secondary mx-2"
+            class="btn btn-outline-secondary mx-1"
 
             @click="toggleEmailVisibility"
           >
-            <i class="bi bi-envelope-fill"></i>
+            <i class="fs-5 bi bi-envelope-fill"></i>
           </button>
           <transition-group name="list" tag="p">
             <p

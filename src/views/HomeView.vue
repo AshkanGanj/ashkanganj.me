@@ -28,7 +28,8 @@ import Certificate from "../views/Certificate.vue";
     <footer class="bg-light">
       <div class="d-flex align-items-center justify-content-center border-top container">
         <ul class="my-0">
-          <ol>&copy; Ashkan Ganj 2023</ol>
+          <li>&copy; Ashkan Ganj 2023</li>
+          <li>Icons by <a href="https://icons8.com">Icons8</a></li>
         </ul>
       </div>
     </footer>

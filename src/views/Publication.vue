@@ -1,8 +1,9 @@
 <template>
     <div class="container">
-        <h2 class="section-title border-bottom my-4 py-2 w-25 mx-auto">
-            Publications
-        </h2>
+        <div class=" border-bottom d-flex justify-content-center align-items-center text-center my-4 py-2 pt-4 w-25 mx-auto">
+            <img width="48" height="48" src="https://img.icons8.com/3d-fluency/94/paper.png" alt="paper"/>
+            <h2 class="section-title mx-2"> Publications </h2>
+        </div>
         <div class="row">
             <div class="col-md-6" v-for="(publication, index) in publications" :key="index">
                 <div class="publication-item shadow-sm border">

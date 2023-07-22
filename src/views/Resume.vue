@@ -1,8 +1,10 @@
 <template>
     <div class="container" data-aos="fade-up">
-      <div class="section-title border-bottom w-25 my-4 py-2">
-        <h2>Resume</h2>
-      </div>
+      <div class=" border-bottom d-flex justify-content-center align-items-center text-center my-4 py-2 pt-4 w-25 mx-auto">
+            <img width="48" height="48" src="https://img.icons8.com/fluency/96/resume.png" alt="resume"/>
+            <h2 class="section-title mx-2"> Resume </h2>
+        </div>
+      
   
       <div class="timeline py-2">
         <div class="row">
@@ -113,11 +115,12 @@
 </style>
   
   <script setup>
-  import { ref } from 'vue';
+  import { capitalize, ref } from 'vue';
   
   const resumeItems = ref([
     {
       name: 'Education',
+      icon:'https://img.icons8.com/color/96/teaching.png',
       items: [
         {
           title: 'Ph.D in Computer Science',
@@ -141,6 +144,7 @@
     },
     {
       name: 'Academic Experiences',
+      icon:'https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-academic-university-flaticons-lineal-color-flat-icons.png',
       items: [
         {
           title: 'Teaching Assistant',
@@ -165,6 +169,7 @@
     },
     {
       name: 'Job Experience',
+      icon:'https://img.icons8.com/color-glass/96/education.png',
       items: [
         {
           title: 'Front-End Developer',
