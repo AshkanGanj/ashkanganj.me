@@ -26,8 +26,8 @@ import Certificate from "../views/Certificate.vue";
       <Certificate />
     </section>
     <footer class="bg-light">
-      <div class="d-flex align-items-center justify-content-center border-top container">
-        <ul class="my-0">
+      <div class="border-top container">
+        <ul class="text-center">
           <li>&copy; Ashkan Ganj 2023</li>
           <li>Icons by <a href="https://icons8.com">Icons8</a></li>
         </ul>
@@ -36,13 +36,20 @@ import Certificate from "../views/Certificate.vue";
   </main>
 </template>
 <style scoped>
-/* place the footer on bottom */
-footer {
-  position: absolute;
-  /* bottom: 0; */
-  width: 100%;
-  height: 60px;
-  line-height: 60px;
-  /* background-color: #f5f5f5; */
+
+
+.footer-wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+ul{
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+ul li{
+  padding: 4px;
 }
 </style>

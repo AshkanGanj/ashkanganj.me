@@ -29,7 +29,7 @@
                   height="30"
                   :src="skill.icon"
                 />
-                <span>{{ skill.name }}</span>
+                <span class="">{{ skill.name }}</span>
               
             </div>
           </li>
