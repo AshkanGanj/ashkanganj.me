@@ -72,12 +72,11 @@ export default {
               name: "TensroFlow",
               icon: "https://img.icons8.com/color/480/tensorflow.png",
             },
-            { name: "PyTorch", icon: "" },
+            { name: "PyTorch", icon: "https://img.icons8.com/color/96/mind-map.png" },
             {
               name: "Numpy",
               icon: "https://img.icons8.com/color/480/numpy.png",
             },
-            { name: "Scikit-learn", icon: "" },
             {
               name: "Pandas",
               icon: "https://img.icons8.com/color/480/pandas.png",
@@ -108,7 +107,7 @@ export default {
               name: "MySQL",
               icon: "https://img.icons8.com/color/480/my-sql.png",
             },
-            { name: "MongoDB", icon: "" },
+            { name: "MongoDB", icon: "https://img.icons8.com/stickers/100/search-database.png" },
           ],
         },
         {
