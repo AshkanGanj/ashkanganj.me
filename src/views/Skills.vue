@@ -18,9 +18,8 @@
         v-for="(category, index) in skillCategories"
         :key="index"
       >
-        <!-- Added a margin bottom class here -->
-        <h3 class="border-bottom">{{ category.name }}</h3>
-        <ul class="skill-item p-2">
+        <h3 class="mb-2">{{ category.name }}</h3>
+        <ul class="skill-item border-top p-2">
           <li class="py-1" v-for="(skill, skillIndex) in category.skills" :key="skillIndex">
             <div class="d-flex justify-content-between">
               <img

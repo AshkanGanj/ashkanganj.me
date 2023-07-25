@@ -20,10 +20,10 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://github.com/AshkanGanj" target="_blank">Projects</a>
+              <a class="nav-link" href="https://github.com/AshkanGanj" target="_blank">Projects(Github)</a>
             </li>
             
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#">Publications</a>
             </li>
             <li class="nav-item">
@@ -32,7 +32,7 @@
             
             <li class="nav-item">
               <a class="nav-link" href="">Skills</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="#">CV</a>
             </li>

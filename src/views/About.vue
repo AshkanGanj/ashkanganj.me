@@ -95,7 +95,7 @@ const open = (url) => {
       window.open("https://github.com/AshkanGanj");
       break;
     case "scholar":
-      window.open("");
+      window.open("https://scholar.google.com/citations?user=Zk68YogAAAAJ&hl=en");
       break;
     case "twitter":
       window.open("https://twitter.com/GanjAshkan");
