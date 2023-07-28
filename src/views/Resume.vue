@@ -62,7 +62,7 @@
   width: 100%;
   padding: 15px;
   border-radius: 5px;
-  background-color: #fffefe;
+
 
 }
 

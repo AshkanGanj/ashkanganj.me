@@ -13,19 +13,19 @@ import Certificate from "../views/Certificate.vue";
     <section class="mt-5">
       <About />
     </section>
-    <section class="bg-light">
+    <section class="">
       <Resume />
     </section>
     <section>
       <Publication />
     </section>
-    <section class="bg-light">
+    <section class="">
       <Skill />
     </section>
     <section>
       <Certificate />
     </section>
-    <footer class="bg-light">
+    <footer class="">
       <div class="border-top container">
         <ul class="text-center">
           <li>&copy; Ashkan Ganj 2023</li>

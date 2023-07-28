@@ -1,7 +1,7 @@
 <template>
   <header>
-    <nav class="navbar shadow-sm navbar-expand-lg bg-light border-bottom fixed-top">
-      <div class="container">
+    <nav class="navbar navbar-expand-lg fixed-top bg-dark" data-bs-theme="dark">
+      <div class="container text-white py-2 border-bottom">
         <a class="navbar-brand" href="#">Ashkan <span>Ganj</span></a>
         <button
           class="navbar-toggler"
@@ -35,11 +35,6 @@
             </li> -->
             <li class="nav-item">
               <a class="nav-link" href="#">CV</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link">
-                <i class="bi bi-brightness-high"  @click="darkMode = !darkMode"></i>
-              </a>
             </li>
           </ul>
         </div>

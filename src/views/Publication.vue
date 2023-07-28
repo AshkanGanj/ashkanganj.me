@@ -90,7 +90,7 @@ export default {
 
 
 .publication-item {
-    background-color: #f7f8f9;
+    /* background-color: #f7f8f9; */
     border-radius: 5px;
     padding: 15px;
     margin-bottom: 20px;

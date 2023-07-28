@@ -2,12 +2,12 @@
   <div class="pt-5 container">
     <div class="row">
       <div class="col-md-4">
-        <img src="../assets/img/main.jpg" alt="Ashkan Ganj" class="img-fluid shadow-sm" />
+        <img src="../assets/img/main.jpg" alt="Ashkan Ganj" class="img-fluid shadow-sm h-75" />
       </div>
       <div class="col-md-8">
         <h1 style="font-family: 'Work Sans';">Hello!</h1>
         <p class="text-justify">
-          I am a first-year computer science MS/Ph.D student at <span><a href="https://www.wpi.edu/" target="_blank">Worcester
+          I am a computer science Ph.D student at <span><a href="https://www.wpi.edu/" target="_blank">Worcester
           Polytechnic Institute (WPI)</a></span> , and a proud member of the <span><a href="https://cake.wpi.edu/">Cake Lab</a></span> 
           research group advised by my kind advisor <span><a href="https://tianguo.info/" target="_blank"> Prof. Tian Guo</a></span>.
         </p>
