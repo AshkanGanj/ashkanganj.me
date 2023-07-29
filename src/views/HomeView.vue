@@ -29,7 +29,7 @@ import Certificate from "../views/Certificate.vue";
       <div class="border-top container">
         <ul class="text-center">
           <li>&copy; Ashkan Ganj 2023</li>
-          <li>Icons by <a href="https://icons8.com">Icons8</a></li>
+          <li>Icons by <span><a href="https://icons8.com/">icons8</a></span></li>
         </ul>
       </div>
     </footer>

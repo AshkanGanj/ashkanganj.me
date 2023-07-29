@@ -1,8 +1,7 @@
 <template>
-    <div class="container">
-        <div class=" border-bottom d-flex justify-content-center align-items-center text-center my-4 py-2 pt-4 w-25 mx-auto">
-            <img width="48" height="48" src="https://img.icons8.com/3d-fluency/94/paper.png" alt="paper"/>
-            <h2 class="section-title mx-2"> Publications </h2>
+    <div class="container pb-3 border-bottom">
+        <div class="text-start py-2 pt-4">
+            <h2 class="section-title"> Publications </h2>
         </div>
         <div class="row">
             <div class="col-md-6" v-for="(publication, index) in publications" :key="index">
@@ -84,9 +83,6 @@ export default {
 </script>
 
 <style scoped>
-.section-title {
-    text-align: center;
-}
 
 
 .publication-item {
@@ -101,7 +97,7 @@ export default {
     margin-top: 0;
     font-size: 18px;
     font-weight: 600;
-    color: #0563bb;
+    color: #0d6efd;
 }
 
 .publication-item p {

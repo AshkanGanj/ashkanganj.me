@@ -1,8 +1,8 @@
 <template>
-  <div class="pt-5 container">
+  <div class="py-5 container border-bottom">
     <div class="row">
       <div class="col-md-4">
-        <img src="../assets/img/main.jpg" alt="Ashkan Ganj" class="img-fluid shadow-sm h-75" />
+        <img src="../assets/img/main.jpg" alt="Ashkan Ganj" class="img-fluid shadow-sm" />
       </div>
       <div class="col-md-8">
         <h1 style="font-family: 'Work Sans';">Hello!</h1>
@@ -22,7 +22,7 @@
           critical for improving the performance of Augmented Reality systems
           and making them more accessible to a wider audience.
         </p>
-        <div class="text-center pb-4">
+        <div class="text-start">
           <button
             class="btn btn-outline-secondary mx-1"
             @click="open('linkedin')"

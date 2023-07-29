@@ -1,9 +1,8 @@
 <template>
-    <div class="container" data-aos="fade-up">
-      <div class=" border-bottom d-flex justify-content-center align-items-center text-center my-4 py-2 pt-4 w-25 mx-auto">
-            <img width="48" height="48" src="https://img.icons8.com/fluency/96/resume.png" alt="resume"/>
+    <div class="container border-bottom" data-aos="fade-up">
+      <!-- <div class="border-bottom text-start my-4 py-2 pt-4 w-25 mx-auto">
             <h2 class="section-title mx-2"> Resume </h2>
-        </div>
+        </div> -->
       
   
       <div class="timeline py-2">
@@ -12,7 +11,7 @@
             <div class="timeline-content border shadow-sm">
               <!-- <h3 class="resume-title">{{ category.name }}</h3> -->
             <div class="resume-item" v-for="(item, itemIndex) in category.items" :key="itemIndex" :class="{ 'border-bottom mb-3': itemIndex !== category.items.length - 1 }">
-                <div class="timeline-time">
+                <div class="timeline-head">
                     <h4>{{ category.name }}</h4>
                 </div>
                 <div class="timeline-body">
@@ -66,17 +65,17 @@
 
 }
 
-.timeline-time {
+.timeline-head {
   position: absolute;
-  top: -25px;
+  top: -30px;
   left: 0;
 }
 
-.timeline-time h4 {
+.timeline-head h4 {
   margin: -5px 0px;
-  font-size: 17px;
-  font-weight: bold;
-  color: #0563bb;
+  font-size: 1.6rem;
+  /* font-weight: bold; */
+  /* color: #0563bb; */
 }
 
 

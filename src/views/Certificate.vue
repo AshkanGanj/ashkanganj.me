@@ -1,8 +1,7 @@
 <template>
   <div class="container">
-    <div class=" border-bottom d-flex justify-content-center align-items-center text-center my-4 py-2 pt-4 w-25 mx-auto">
-        <img width="48" height="48" src="https://img.icons8.com/officel/80/certificate.png" alt="certificate"/>
-        <h2 class="section-title mx-2"> Certificates </h2>
+    <div class="text-start my-4 py-2">
+        <h2 class="section-title"> Certificates </h2>
       </div>
     <div class="row">
       <div class="col-lg-4 col-md-6 mb-4 py-4" v-for="(certificate, index) in certificates" :key="index">
@@ -84,10 +83,7 @@ export default {
 
 
 <style scoped>
-.section-title {
-  text-align: center;
-  margin-top: 20px;
-}
+
 
 .card {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);

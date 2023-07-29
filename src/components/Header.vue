@@ -1,8 +1,8 @@
 <template>
   <header>
     <nav class="navbar navbar-expand-lg fixed-top bg-dark" data-bs-theme="dark">
-      <div class="container text-white py-2 border-bottom">
-        <a class="navbar-brand" href="#">Ashkan <span>Ganj</span></a>
+      <div class="container text-white py-2 border-bottom ">
+        <a class="navbar-brand fs-3" href="#">Ashkan <span>Ganj</span></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -63,12 +63,7 @@ console.log(darkMode.value);
   }
 }
 
-.navbar-brand{
-  font-size: 1.5rem;
-}
-
 .navbar-brand span{
   color: #0d6efd;
-  font-weight: 700;
 }
 </style>

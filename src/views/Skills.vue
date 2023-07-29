@@ -1,19 +1,11 @@
 <template>
-  <div class="container">
-    <div
-      class="border-bottom d-flex justify-content-center align-items-center text-center my-4 py-2 pt-4 w-25 mx-auto"
-    >
-      <img
-        width="42"
-        height="42"
-        src="https://img.icons8.com/dusk/64/code.png"
-        alt="code"
-      />
-      <h2 class="section-title mx-2">Skills</h2>
+  <div class="container border-bottom">
+    <div class="text-start py-2 pt-4">
+      <h2 class="">Skills</h2>
     </div>
 
     <div class="row">
-      <div
+      <!-- <div
         class="col-lg-3 col-md-4 skill-category mb-4 text-center"
         v-for="(category, index) in skillCategories"
         :key="index"
@@ -33,6 +25,24 @@
             </div>
           </li>
         </ul>
+      </div> -->
+
+      <div
+        class="col-lg-3 col-md-4 mb-4"
+        v-for="(category, index) in skillCategories"
+        :key="index"
+      >
+        <div class="list-group">
+          <div class="list-group-item list-group-item-action fw-bold">
+            {{ category.name }}
+          </div>
+          <div v-for="(skill, skillIndex) in category.skills" :key="skillIndex">
+            <div class="list-group-item list-group-item-action">
+              <img :src="skill.icon" class="me-2" width="30" height="30" />
+              {{ skill.name }}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -71,7 +81,10 @@ export default {
               name: "TensroFlow",
               icon: "https://img.icons8.com/color/480/tensorflow.png",
             },
-            { name: "PyTorch", icon: "https://img.icons8.com/color/96/mind-map.png" },
+            {
+              name: "PyTorch",
+              icon: "https://img.icons8.com/color/96/mind-map.png",
+            },
             {
               name: "Numpy",
               icon: "https://img.icons8.com/color/480/numpy.png",
@@ -106,7 +119,10 @@ export default {
               name: "MySQL",
               icon: "https://img.icons8.com/color/480/my-sql.png",
             },
-            { name: "MongoDB", icon: "https://img.icons8.com/stickers/100/search-database.png" },
+            {
+              name: "MongoDB",
+              icon: "https://img.icons8.com/stickers/100/search-database.png",
+            },
           ],
         },
         {
@@ -141,7 +157,6 @@ export default {
             },
           ],
         },
-        
       ],
     };
   },
@@ -152,12 +167,11 @@ export default {
 .skill-category {
   list-style: none;
   padding-left: 0;
-
 }
 
 .skill-category h3 {
   margin-bottom: 5px;
-  color: #0563bb;
+  color: #0d6efd;
 }
 
 .skill-item {
