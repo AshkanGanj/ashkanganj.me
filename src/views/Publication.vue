@@ -11,7 +11,7 @@
                         <span class="badge-btn date">{{ publication.date }}</span>
                         <span class="me-2 text-primary">|</span>
                         <a v-if="publication.link" :href="publication.link" target="_blank" class="badge-btn">Paper</a>
-                        <a v-if="publication.website" :href="publication.website" target="_blank" class="badge-btn">Project Website</a>
+                        <a v-if="publication.website" :href="publication.website" target="_blank" class="badge-btn">Project</a>
                         <a v-if="publication.arxiv" :href="publication.arxiv" target="_blank" class="badge-btn">arxiv</a>
                         <a v-if="publication.github" :href="publication.github" target="_blank" class="badge-btn">Code</a>
                     </div>
@@ -97,7 +97,7 @@ export default {
     margin-top: 0;
     font-size: 18px;
     font-weight: 600;
-    color: #0d6efd;
+    color: rgb(93, 181, 251);
 }
 
 .publication-item p {

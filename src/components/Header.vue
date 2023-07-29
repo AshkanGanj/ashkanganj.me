@@ -64,6 +64,6 @@ console.log(darkMode.value);
 }
 
 .navbar-brand span{
-  color: #0d6efd;
+  color: rgb(93, 181, 251);
 }
 </style>

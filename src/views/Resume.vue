@@ -5,19 +5,19 @@
         </div> -->
       
   
-      <div class="timeline py-2">
+      <div class="timeline pt-4">
         <div class="row">
           <div class="col-md-6 col-sm-12 timeline-item" v-for="(category, index) in resumeItems" :key="index">
             <div class="timeline-content border shadow-sm">
               <!-- <h3 class="resume-title">{{ category.name }}</h3> -->
             <div class="resume-item" v-for="(item, itemIndex) in category.items" :key="itemIndex" :class="{ 'border-bottom mb-3': itemIndex !== category.items.length - 1 }">
                 <div class="timeline-head">
-                    <h4>{{ category.name }}</h4>
+                    <h2>{{ category.name }}</h2>
                 </div>
                 <div class="timeline-body">
                     <h4>{{ item.title }}</h4>
                     
-                    <p><span class="badge-btn mb-2 date">{{ item.date }}</span></p>
+                    <p><span class="badge-btn date">{{ item.date }}</span></p>
                     <p><em>{{ item.institution }}</em></p>
                     <p class="text-justify">
                         <ul>
@@ -71,11 +71,8 @@
   left: 0;
 }
 
-.timeline-head h4 {
-  margin: -5px 0px;
-  font-size: 1.6rem;
-  /* font-weight: bold; */
-  /* color: #0563bb; */
+.timeline-head h2 {
+  margin: -20px 0px;
 }
 
 
@@ -83,11 +80,11 @@
   margin-top: 0;
   font-size: 18px;
   font-weight: 600;
-  color: #0563bb;
+  color: rgb(93, 181, 251);
 }
 
 .timeline-body p {
-  margin-bottom: 0;
+  margin-bottom: 8px;
 }
 
 .timeline-body ul {
@@ -98,17 +95,17 @@
 .timeline-body ul li {
   position: relative;
   padding-left: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .timeline-body ul li:before {
   content: "";
   position: absolute;
-  top: 5px;
+  top: 10px;
   left: 0;
   width: 8px;
   height: 8px;
-  background-color: #0563bb;
+  background-color: rgb(93, 181, 251);
   border-radius: 50%;
 }
 </style>
