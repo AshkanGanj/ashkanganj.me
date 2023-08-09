@@ -5,28 +5,6 @@
     </div>
 
     <div class="row">
-      <!-- <div
-        class="col-lg-3 col-md-4 skill-category mb-4 text-center"
-        v-for="(category, index) in skillCategories"
-        :key="index"
-      >
-        <h3 class="mb-2">{{ category.name }}</h3>
-        <ul class="skill-item border-top p-2">
-          <li class="py-1" v-for="(skill, skillIndex) in category.skills" :key="skillIndex">
-            <div class="d-flex justify-content-between">
-              <img
-                  class="img-fluid"
-                  width="30"
-                  height="30"
-                  :src="skill.icon"
-                />
-                <span class="">{{ skill.name }}</span>
-              
-            </div>
-          </li>
-        </ul>
-      </div> -->
-
       <div
         class="col-lg-3 col-md-4 mb-4"
         v-for="(category, index) in skillCategories"

@@ -116,9 +116,9 @@ p{
 .email-item {
   font-size: 1.2rem;
   margin-top: 1rem;
-  background-color: #e0e0e0;
-  padding: 0.2rem 0.4rem;
-  /* border-radius: 10px; */
+  background-color: #000;
+  padding: 0.4rem 0.5rem;
+  border-radius: 5px;
   display: inline-block;
   margin: 10px 5px;
 }

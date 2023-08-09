@@ -9,7 +9,7 @@
                     <h3>{{ publication.title }}</h3>
                     <div class="d-flex">
                         <span class="badge-btn date">{{ publication.date }}</span>
-                        <span class="me-2 text-primary">|</span>
+                        <span class="me-2" style="color: rgb(93, 181, 251);">|</span>
                         <a v-if="publication.link" :href="publication.link" target="_blank" class="badge-btn">Paper</a>
                         <a v-if="publication.website" :href="publication.website" target="_blank" class="badge-btn">Project</a>
                         <a v-if="publication.arxiv" :href="publication.arxiv" target="_blank" class="badge-btn">arxiv</a>
