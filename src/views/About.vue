@@ -7,8 +7,8 @@
       <div class="col-md-8">
         <h1 style="font-family: 'Work Sans';">Hello!</h1>
         <p class="text-justify">
-          I am a computer science Ph.D student at <span><a href="https://www.wpi.edu/" target="_blank">Worcester
-          Polytechnic Institute (WPI)</a></span>, advised by my kind advisor <span><a href="https://tianguo.info/" target="_blank"> Prof. Tian Guo</a></span>.
+          I am a computer science Ph.D. student at <span><a href="https://www.wpi.edu/" target="_blank">Worcester
+          Polytechnic Institute (WPI)</a></span>, advised by my kind advisor <span><a href="https://tianguo.info/" target="_blank"> Prof. Tian Guo</a></span>. I'm part of the <span><a href="#">Cake Lab</a></span>, focusing on research in computer vision and its application on mobile AR
         </p>
         <p class="text-justify">
           My research interests lie in the field of Computer Vision,
