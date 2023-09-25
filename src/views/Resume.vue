@@ -60,7 +60,7 @@
   position: relative;
   width: 100%;
   padding: 15px;
-  border-radius: 5px;
+  border-radius: 0px;
 
 
 }

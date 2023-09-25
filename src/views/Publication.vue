@@ -17,7 +17,7 @@
                     </div>
                     <p></p>
                     <p>
-                        <em>Published: {{ publication.journal }}</em>
+                        <em> <span class="pub-venue" v-if="publication.venue" >{{ publication.venue }}</span> : {{ publication.journal }}</em>
                     </p>
                     <p>
                         Authors: 
@@ -62,9 +62,10 @@ export default {
                 {
                     title:
                         "Toward Scalable and Controllable AR Experimentation",
-                    date: "July-2023",
+                    date: "October-2023",
+                    venue: "ImmerCom'23",
                     journal:
-                        "Pre-Print is Available on arXiv",
+                        "1st ACM Workshop on Mobile Immersive Computing, Networking, and Systems",
                     authors: [
                         "Ashkan Ganj",
                         "Yiqin Zhao",
@@ -72,7 +73,7 @@ export default {
                         "Tian Guo",
                     ],
                     arxiv:"https://arxiv.org/abs/2307.08587",
-                    link: "",
+                    link: "https://dl.acm.org/doi/abs/10.1145/3615452.3617941",
                     website: "https://cake.wpi.edu/expar/",
                     github: ""
                 }
@@ -87,7 +88,7 @@ export default {
 
 .publication-item {
     /* background-color: #f7f8f9; */
-    border-radius: 5px;
+    border-radius: 0px;
     padding: 15px;
     margin-bottom: 20px;
 }
@@ -103,4 +104,9 @@ export default {
 .publication-item p {
     margin-bottom: 10px;
 }
+
+.pub-venue {
+    color: rgb(93, 181, 251);
+    font-weight: bold;
+    }
 </style>

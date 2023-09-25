@@ -158,4 +158,7 @@ export default {
   width: 50%;
   margin: 0 auto;
 }
+.list-group-item {
+  border-radius: 0px;
+}
 </style>
