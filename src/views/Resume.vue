@@ -147,7 +147,8 @@
           institution: 'Worcester Polytechnic Institute (WPI), Worcester, USA',
           details: [
             'CS 2303 (Systems Programming Concepts)',
-            'CS 2119 (Application Building with Object-Oriented Concepts)'
+            'CS 2119 (Application Building with Object-Oriented Concepts)',
+            'CS 1101 (Introduction to Programming Design)'
           ]
         },
         {
@@ -155,15 +156,15 @@
           date: '2021 - 2022',
           institution: 'University of Mohaghegh Ardabil, Ardabil, IR',
           details: [
-            'Algorithm and Data Structure (Spring 2021)',
-            'Software Engineering (Fall 2021)',
-            'Discrete Mathematics (Spring 2020)'
+            'Algorithm and Data Structure',
+            'Software Engineering',
+            'Discrete Mathematics'
           ]
         }
       ]
     },
     {
-      name: 'Job Experience',
+      name: 'Professional Experiences',
       icon:'https://img.icons8.com/color-glass/96/education.png',
       items: [
         {

@@ -2,7 +2,7 @@
   <div class="py-5 container border-bottom">
     <div class="row">
       <div class="col-md-4">
-        <img src="../assets/img/main.jpg" alt="Ashkan Ganj" class="img-fluid shadow-sm" />
+        <img src="../assets/img/main.jpg" alt="Ashkan Ganj" class="img-fluid shadow-sm rounded-1" />
       </div>
       <div class="col-md-8">
         <h1 style="font-family: 'Work Sans';">Hello!</h1>

@@ -17,7 +17,7 @@
                     </div>
                     <p></p>
                     <p>
-                        <em> <span class="pub-venue" v-if="publication.venue" >{{ publication.venue }}</span> : {{ publication.journal }}</em>
+                        <em> <span class="pub-venue" v-if="publication.venue" >{{ publication.venue }} :</span> {{ publication.journal }}</em>
                     </p>
                     <p>
                         Authors: 

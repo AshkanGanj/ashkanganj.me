@@ -42,3 +42,7 @@ p a{
 .text-white{
     color: #ffffff;
 }
+
+.btn{
+    border-radius: 2px!important;
+}
