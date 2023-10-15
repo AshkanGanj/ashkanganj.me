@@ -123,7 +123,7 @@
           date: '2023 - Current',
           institution: 'Worcester Polytechnic Institute (WPI), Worcester, USA',
           details: [
-            'Advisor: <a href="https://tianguo.info/">Prof. Tian Guo</a>'
+            'Advisor: <a href="https://tianguo.info/">Tian Guo</a>'
           ]
         },
         {

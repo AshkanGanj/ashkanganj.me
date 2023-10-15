@@ -24,7 +24,7 @@
                         <template v-for="(author, index) in publication.authors" :key="index">
                             <span>
                                 <template v-if="author === 'Ashkan Ganj'">
-                                    <b>{{ author }}</b>
+                                    <span class="me">{{ author }}</span>
                                 </template>
                                 <template v-else>
                                     {{ author }}
@@ -32,6 +32,9 @@
                                 <template v-if="index < publication.authors.length - 1">, </template>
                             </span>
                         </template>
+                    </p>
+                    <p v-if="publication.award">
+                        <span class="award">🏆 {{ publication.award }}</span>
                     </p>
                 </div>
             </div>
@@ -43,6 +46,25 @@ export default {
     data() {
         return {
             publications: [
+                {
+                    title:
+                        "Toward Scalable and Controllable AR Experimentation",
+                    date: "October-2023",
+                    venue: "ImmerCom'23",
+                    journal:
+                        "1st ACM Workshop on Mobile Immersive Computing, Networking, and Systems",
+                    authors: [
+                        "Ashkan Ganj",
+                        "Yiqin Zhao",
+                        "Federico Galbiati",
+                        "Tian Guo",
+                    ],
+                    award: "Best Paper Runner-up Award",
+                    arxiv:"https://arxiv.org/abs/2307.08587",
+                    link: "https://dl.acm.org/doi/abs/10.1145/3615452.3617941",
+                    website: "https://cake.wpi.edu/expar/",
+                    github: ""
+                },
                 {
                     title:
                         "LR-Net: A Block-based Convolutional Neural Network for Low-Resolution Image Classification",
@@ -58,25 +80,8 @@ export default {
                     arxiv:"https://arxiv.org/abs/2207.09531",
                     link: "https://link.springer.com/article/10.1007/s40998-023-00618-5",
                     github: "https://github.com/AshkanGanj/LR-Net"
-                },
-                {
-                    title:
-                        "Toward Scalable and Controllable AR Experimentation",
-                    date: "October-2023",
-                    venue: "ImmerCom'23",
-                    journal:
-                        "1st ACM Workshop on Mobile Immersive Computing, Networking, and Systems",
-                    authors: [
-                        "Ashkan Ganj",
-                        "Yiqin Zhao",
-                        "Federico Galbiati",
-                        "Tian Guo",
-                    ],
-                    arxiv:"https://arxiv.org/abs/2307.08587",
-                    link: "https://dl.acm.org/doi/abs/10.1145/3615452.3617941",
-                    website: "https://cake.wpi.edu/expar/",
-                    github: ""
                 }
+                
             ],
         };
     },
@@ -109,4 +114,18 @@ export default {
     color: rgb(93, 181, 251);
     font-weight: bold;
     }
+
+.award{
+    color: #f7f8f9;
+    background-color: rgb(94, 190, 255);
+    padding: 4px;
+    border-radius: 0px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.me{
+    font-weight: bold;
+    text-decoration: underline;
+}
 </style>
