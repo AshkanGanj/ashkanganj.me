@@ -146,9 +146,10 @@
           date: '2023 - Current',
           institution: 'Worcester Polytechnic Institute (WPI), Worcester, USA',
           details: [
-            'CS 2303 (Systems Programming Concepts)',
-            'CS 2119 (Application Building with Object-Oriented Concepts)',
-            'CS 1101 (Introduction to Programming Design)'
+            '(CS 4233) Object-Oriented Analysis and Design',
+            '(CS 1101) Introduction to Programming Design',
+            '(CS 2303) Systems Programming Concepts',
+            '(CS 2119) Application Building with Object-Oriented Concepts'
           ]
         },
         {

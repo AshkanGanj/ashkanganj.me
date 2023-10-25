@@ -48,6 +48,43 @@ export default {
             publications: [
                 {
                     title:
+                        "Mobile AR Depth Estimation: Challenges & Prospects",
+                    date: "Pre-Print",
+                    venue: "",
+                    journal:
+                        "",
+                    authors: [
+                        "Ashkan Ganj",
+                        "Yiqin Zhao",
+                        "Hang Su",
+                        "Tian Guo",
+                    ],
+                    award: "",
+                    arxiv:"https://arxiv.org/pdf/2310.14437.pdf",
+                    link: "",
+                    website: "",
+                    github: ""
+                },
+                {
+                    title:
+                        "Get-A-Sense: Designing Spatial Context Awareness for Mobile AR Environment Understanding",
+                    date: "Pre-Print",
+                    venue: "",
+                    journal:
+                        "",
+                    authors: [
+                        "Yiqin Zhao",
+                        "Ashkan Ganj",
+                        "Tian Guo",
+                    ],
+                    award: "",
+                    arxiv:"https://arxiv.org/pdf/2310.10821.pdf",
+                    link: "",
+                    website: "",
+                    github: ""
+                },
+                {
+                    title:
                         "Toward Scalable and Controllable AR Experimentation",
                     date: "October-2023",
                     venue: "ImmerCom'23",
@@ -117,8 +154,8 @@ export default {
 
 .award{
     color: #f7f8f9;
-    background-color: rgb(94, 190, 255);
-    padding: 4px;
+    background-color: rgb(29, 117, 176);
+    padding: 4px 5px;
     border-radius: 0px;
     font-size: 14px;
     font-weight: bold;
