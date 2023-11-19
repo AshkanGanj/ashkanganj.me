@@ -80,7 +80,7 @@
   margin-top: 0;
   font-size: 18px;
   font-weight: 600;
-  color: rgb(93, 181, 251);
+  color: rgb(29, 149, 230);
 }
 
 .timeline-body p {
@@ -105,7 +105,7 @@
   left: 0;
   width: 8px;
   height: 8px;
-  background-color: rgb(93, 181, 251);
+  background-color: rgb(29, 149, 230);
   border-radius: 50%;
 }
 </style>

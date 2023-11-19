@@ -1,6 +1,6 @@
 <template>
   <header>
-    <nav class="navbar navbar-expand-lg fixed-top bg-dark" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg fixed-top bg-light">
       <div class="container text-white py-2 border-bottom ">
         <a class="navbar-brand fs-3" href="#">Ashkan <span>Ganj</span></a>
         <button
@@ -53,6 +53,6 @@ console.log(darkMode.value);
 }
 
 .navbar-brand span{
-  color: rgb(93, 181, 251);
+  color: rgb(29, 149, 230);
 }
 </style>
