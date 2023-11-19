@@ -21,13 +21,13 @@
 </template>
 
 <script>
-import MachineLearningImage from '@/assets/img/machine-learning.jpg';
-import NeuralNetworksImage from '@/assets/img/neural-networks.jpg';
-import ImproveImage from '@/assets/img/improve.jpg';
-import StructureNeuralImage from '@/assets/img/structure-neural.jpg';
-import CNNImage from '@/assets/img/cnn.jpg';
-import SequenceModelImage from '@/assets/img/Sequence model.jpg';
-import DeepLearningImage from '@/assets/img/Deep learning.jpg';
+import MachineLearningImage from '/img/machine-learning.jpg';
+import NeuralNetworksImage from '/img/neural-networks.jpg';
+import ImproveImage from '/img/improve.jpg';
+import StructureNeuralImage from '/img/structure-neural.jpg';
+import CNNImage from '/img/cnn.jpg';
+import SequenceModelImage from '/img/Sequence model.jpg';
+import DeepLearningImage from '/img/Deep learning.jpg';
 
 export default {
   data() {

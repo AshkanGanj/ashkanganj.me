@@ -61,7 +61,7 @@ export default {
                 {
                     title:
                         "Mobile AR Depth Estimation: Challenges & Prospects",
-                    img: "src/assets/img/papers/MobileARDepth.png",
+                    img: "/img/papers/MobileARDepth.png",
                     date: "Pre-Print",
                     venue: "",
                     journal:
@@ -81,7 +81,7 @@ export default {
                 {
                     title:
                         "Get-A-Sense: Designing Spatial Context Awareness for Mobile AR Environment Understanding",
-                    img: "src/assets/img/papers/get-a-sense-hotmobile.png",
+                    img: "/img/papers/get-a-sense-hotmobile.png",
 
                     date: "Pre-Print",
                     venue: "",
@@ -101,7 +101,7 @@ export default {
                 {
                     title:
                         "Toward Scalable and Controllable AR Experimentation",
-                    img: "src/assets/img/papers/expar.png",
+                    img: "/img/papers/expar.png",
 
                     date: "October-2023",
                     venue: "ImmerCom'23",
@@ -122,7 +122,7 @@ export default {
                 {
                     title:
                         "LR-Net: A Block-based Convolutional Neural Network for Low-Resolution Image Classification",
-                    img: "src/assets/img/papers/LR-Net.png",
+                    img: "/img/papers/LR-Net.png",
 
                     date: "June-2023",
                     journal:
