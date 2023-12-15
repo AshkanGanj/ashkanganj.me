@@ -62,10 +62,10 @@ export default {
                     title:
                         "Mobile AR Depth Estimation: Challenges & Prospects",
                     img: "/img/papers/MobileARDepth.png",
-                    date: "Pre-Print",
-                    venue: "",
+                    date: "February-2024",
+                    venue: "HotMobile 2024",
                     journal:
-                        "",
+                        "The 25th International Workshop on Mobile Computing Systems and Applications",
                     authors: [
                         "Ashkan Ganj",
                         "Yiqin Zhao",
