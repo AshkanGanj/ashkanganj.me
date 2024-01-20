@@ -23,7 +23,7 @@
               <a class="nav-link" href="https://github.com/AshkanGanj" target="_blank">Projects(Github)</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#">CV</a>
+              <a class="nav-link" href="Ashkan_Ganj_CV.pdf">CV</a>
             </li>
           </ul>
         </div>
