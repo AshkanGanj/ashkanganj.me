@@ -1,6 +1,6 @@
 <template>
   <header>
-    <nav class="navbar navbar-expand-lg fixed-top bg-light">
+    <nav class="navbar navbar-expand-lg fixed-top bg-dark">
       <div class="container text-white py-2 border-bottom ">
         <a class="navbar-brand fs-3" href="#">Ashkan <span>Ganj</span></a>
         <button

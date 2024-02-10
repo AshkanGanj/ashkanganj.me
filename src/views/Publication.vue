@@ -6,12 +6,13 @@
         <div class="row">
             <div class="col-md-12" v-for="(publication, index) in publications" :key="index">
                 <div class="row border-bottom py-4 my-3">
-                    <div class="col-3">
-                            <img class="img-fluid" :src="publication.img" alt="Publication Image">
+                    <div class="col-md-3">
+                            <img class="img-fluid mb-2" :src="publication.img" alt="Publication Image">
                     </div>
-                    <div class="col-9">
+                    <div class="col-md-9">
                         <div class="publication-item">
                             <h3>{{ publication.title }}</h3>
+                            
                             <div class="d-flex">
                                 <span class="badge-btn date">{{ publication.date }}</span>
                                 <span class="me-2" style="color: rgb(93, 181, 251);">|</span>
@@ -25,6 +26,9 @@
                                     class="badge-btn">Code</a>
                             </div>
                             <p></p>
+                            <p v-if="publication.award">
+                                <span class="award"><span class="">🏆</span> {{ publication.award }}</span>
+                            </p>
                             <p>
                                 <em> <span class="pub-venue" v-if="publication.venue">{{ publication.venue }} :</span> {{
                                     publication.journal }}</em>
@@ -43,9 +47,7 @@
                                     </span>
                                 </template>
                             </p>
-                            <p v-if="publication.award">
-                                <span class="award">🏆 {{ publication.award }}</span>
-                            </p>
+                            
                         </div>
                     </div>
                 </div>
@@ -74,26 +76,6 @@ export default {
                     ],
                     award: "",
                     arxiv: "https://arxiv.org/pdf/2310.14437.pdf",
-                    link: "",
-                    website: "",
-                    github: ""
-                },
-                {
-                    title:
-                        "Get-A-Sense: Designing Spatial Context Awareness for Mobile AR Environment Understanding",
-                    img: "/img/papers/get-a-sense-hotmobile.png",
-
-                    date: "Pre-Print",
-                    venue: "",
-                    journal:
-                        "",
-                    authors: [
-                        "Yiqin Zhao",
-                        "Ashkan Ganj",
-                        "Tian Guo",
-                    ],
-                    award: "",
-                    arxiv: "https://arxiv.org/pdf/2310.10821.pdf",
                     link: "",
                     website: "",
                     github: ""
@@ -155,8 +137,8 @@ export default {
 
 .publication-item h3 {
     margin-top: 0;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 22px;
+    font-weight: 500;
     color: rgb(29, 149, 230);
 }
 
@@ -172,10 +154,14 @@ export default {
 .award {
     color: #f7f8f9;
     background-color: rgb(29, 117, 176);
-    padding: 4px 5px;
+    border: 1px solid rgb(29, 117, 176);
+    padding: 6px 4px;
     border-radius: 0px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
+}
+.award span {
+    font-size: 18px;
 }
 
 .me {

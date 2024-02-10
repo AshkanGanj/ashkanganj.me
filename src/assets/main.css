@@ -10,10 +10,10 @@
 .badge-btn{
     background-color: #000;
     border-radius: 0x;
-    padding: 5px 10px;
+    padding: 4px 10px;
     color: #ffffff;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 13px;
+    font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     border: 1px solid #000;
@@ -44,5 +44,5 @@ p a{
 }
 
 .btn{
-    border-radius: 2px!important;
+    border-radius: 0px!important;
 }
