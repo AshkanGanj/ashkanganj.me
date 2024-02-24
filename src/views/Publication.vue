@@ -76,7 +76,7 @@ export default {
                     ],
                     award: "",
                     arxiv: "https://arxiv.org/pdf/2310.14437.pdf",
-                    link: "",
+                    link: "https://dl.acm.org/doi/10.1145/3638550.3641122",
                     website: "",
                     github: ""
                 },
