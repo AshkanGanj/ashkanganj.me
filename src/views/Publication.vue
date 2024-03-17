@@ -78,7 +78,7 @@ export default {
                     arxiv: "https://arxiv.org/pdf/2310.14437.pdf",
                     link: "https://dl.acm.org/doi/10.1145/3638550.3641122",
                     website: "",
-                    github: ""
+                    github: "https://github.com/cake-lab/Mobile-AR-Depth-Estimation"
                 },
                 {
                     title:
