@@ -1,7 +1,7 @@
 <template>
   <header>
     <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container text-white py-2 border-bottom ">
+      <div class="container text-white py-2 border-bottom">
         <a class="navbar-brand fs-3" href="#">Ashkan <span>Ganj</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,85 +59,80 @@
   </header>
 </template>
 
-<script>
+<script setup>
 import { onMounted } from 'vue';
 
-export default {
-  name: 'NavbarComponent',
-  setup() {
-    const setTheme = (theme) => {
-      if (theme === 'auto') {
-        document.documentElement.setAttribute(
-          'data-bs-theme',
-          window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-        );
-      } else {
-        document.documentElement.setAttribute('data-bs-theme', theme);
-      }
-    };
-
-    const getStoredTheme = () => localStorage.getItem('theme');
-    const setStoredTheme = (theme) => localStorage.setItem('theme', theme);
-
-    const getPreferredTheme = () => {
-      const storedTheme = getStoredTheme();
-      if (storedTheme) {
-        return storedTheme;
-      }
-      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    };
-
-    const showActiveTheme = (theme, focus = false) => {
-      const themeSwitcher = document.querySelector('#bd-theme');
-
-      if (!themeSwitcher) {
-        return;
-      }
-
-      const themeSwitcherText = document.querySelector('#bd-theme-text');
-      const activeThemeIcon = document.querySelector('.theme-icon-active');
-      const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`);
-      const iconClass = btnToActive.querySelector('i').className;
-
-      document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
-        element.classList.remove('active');
-        element.setAttribute('aria-pressed', 'false');
-      });
-
-      btnToActive.classList.add('active');
-      btnToActive.setAttribute('aria-pressed', 'true');
-      activeThemeIcon.className = iconClass;
-      const themeSwitcherLabel = `${themeSwitcherText.textContent} (${btnToActive.dataset.bsThemeValue})`;
-      themeSwitcher.setAttribute('aria-label', themeSwitcherLabel);
-
-      if (focus) {
-        themeSwitcher.focus();
-      }
-    };
-
-    onMounted(() => {
-      setTheme(getPreferredTheme());
-
-      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-        const storedTheme = getStoredTheme();
-        if (storedTheme !== 'light' && storedTheme !== 'dark') {
-          setTheme(getPreferredTheme());
-        }
-      });
-
-      showActiveTheme(getPreferredTheme());
-
-      document.querySelectorAll('[data-bs-theme-value]').forEach(toggle => {
-        toggle.addEventListener('click', () => {
-          const theme = toggle.getAttribute('data-bs-theme-value');
-          setStoredTheme(theme);
-          setTheme(theme);
-          showActiveTheme(theme, true);
-        });
-      });
-    });
+const setTheme = (theme) => {
+  if (theme === 'auto') {
+    document.documentElement.setAttribute(
+      'data-bs-theme',
+      window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+    );
+  } else {
+    document.documentElement.setAttribute('data-bs-theme', theme);
   }
 };
+
+const getStoredTheme = () => localStorage.getItem('theme');
+const setStoredTheme = (theme) => localStorage.setItem('theme', theme);
+
+const getPreferredTheme = () => {
+  const storedTheme = getStoredTheme();
+  if (storedTheme) {
+    return storedTheme;
+  }
+  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+};
+
+const showActiveTheme = (theme, focus = false) => {
+  const themeSwitcher = document.querySelector('#bd-theme');
+
+  if (!themeSwitcher) {
+    return;
+  }
+
+  const themeSwitcherText = document.querySelector('#bd-theme-text');
+  const activeThemeIcon = document.querySelector('.theme-icon-active');
+  const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`);
+  const iconClass = btnToActive.querySelector('i').className;
+
+  document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+    element.classList.remove('active');
+    element.setAttribute('aria-pressed', 'false');
+  });
+
+  btnToActive.classList.add('active');
+  btnToActive.setAttribute('aria-pressed', 'true');
+  activeThemeIcon.className = `bi ${iconClass.split(' ')[1]} my-1 theme-icon-active`;
+  const themeSwitcherLabel = `${themeSwitcherText.textContent} (${btnToActive.dataset.bsThemeValue})`;
+  themeSwitcher.setAttribute('aria-label', themeSwitcherLabel);
+
+  if (focus) {
+    themeSwitcher.focus();
+  }
+};
+
+onMounted(() => {
+  setTheme(getPreferredTheme());
+
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+    const storedTheme = getStoredTheme();
+    if (storedTheme !== 'light' && storedTheme !== 'dark') {
+      setTheme(getPreferredTheme());
+    }
+  });
+
+  showActiveTheme(getPreferredTheme());
+
+  document.querySelectorAll('[data-bs-theme-value]').forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      const theme = toggle.getAttribute('data-bs-theme-value');
+      setStoredTheme(theme);
+      setTheme(theme);
+      showActiveTheme(theme, true);
+    });
+  });
+});
 </script>
 
 <style scoped>
