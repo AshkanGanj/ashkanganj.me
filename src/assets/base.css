@@ -1,5 +1,6 @@
-/* color palette from <https://github.com/vuejs/theme> */
+
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Work+Sans:wght@400;700&display=swap');
+/* 
 :root {
   --vt-c-white: #ffffff;
   --vt-c-white-soft: #f8f8f8;
@@ -22,7 +23,7 @@
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
 }
 
-/* semantic color variables for this project */
+
 :root {
   --color-background: var(--vt-c-white);
   --color-background-soft: var(--vt-c-white-soft);
@@ -49,6 +50,10 @@
     --color-heading: var(--vt-c-text-dark-1);
     --color-text: var(--vt-c-text-dark-2);
   }
+  .navbar {
+    background-color: var(--color-background-mute);
+    color: var(--color-text);
+  }
 }
 
 *,
@@ -62,7 +67,7 @@
 body {
   min-height: 100vh;
   color: var(--color-text);
-  background: var(--color-background);
+  background: var(--color-background-mute);
   transition: color 0.5s, background-color 0.5s;
 
   font-family:  'Work Sans', 'Fira Sans',Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
@@ -71,3 +76,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.navbar {
+  background-color: var(--color-background-mute);
+} */
