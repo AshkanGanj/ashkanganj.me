@@ -1,7 +1,7 @@
 <template>
   <header>
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container text-white py-2 border-bottom">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container text-white border-bottom">
         <a class="navbar-brand fs-3" href="#">Ashkan <span>Ganj</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,7 +16,7 @@
               <a class="nav-link" href="https://github.com/AshkanGanj" target="_blank">Projects(Github)</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Ashkan_Ganj_CV.pdf">CV</a>
+              <a class="nav-link disabled" href="Ashkan_Ganj_CV.pdf">CV</a>
             </li>
             <li class="nav-item dropdown">
               <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center"
@@ -151,8 +151,8 @@ onMounted(() => {
   color: rgb(29, 149, 230);
 }
 
-[data-bs-theme="dark"] {
+/* [data-bs-theme="dark"] {
   background-color: #121212;
   color: #ffffff;
-}
+} */
 </style>

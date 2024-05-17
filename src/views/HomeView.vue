@@ -10,7 +10,7 @@ import Certificate from "../views/Certificate.vue";
 <template>
   <Header />
   <main>
-    <section class="mt-5">
+    <section class="">
       <About />
     </section>
     <section class="">

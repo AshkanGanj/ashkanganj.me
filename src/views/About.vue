@@ -1,5 +1,5 @@
 <template>
-  <div class="py-5 container border-bottom">
+  <div class="py-3 container border-bottom">
     <div class="row">
       <div class="col-md-4">
         <img src="/img/main.jpg" alt="Ashkan Ganj" class="img-fluid shadow-sm rounded-1" />
