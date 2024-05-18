@@ -141,9 +141,15 @@ onMounted(() => {
   font-size: large;
   font-family: 'Work Sans';
 }
+.navbar-nav{
+  align-items: center;
+}
 @media (max-width: 990px) {
   .navbar {
     height: auto;
+  }
+  .navbar-nav {
+    align-items: flex-start;
   }
 }
 
