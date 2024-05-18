@@ -16,9 +16,9 @@
               <a class="nav-link" href="https://github.com/AshkanGanj" target="_blank">Projects(Github)</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Ashkan_Ganj_CV.pdf">CV</a>
+              <a class="nav-link disabled" href="Ashkan_Ganj_CV.pdf">CV</a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown align-content-center">
               <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center"
                 id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static"
                 aria-label="Toggle theme (light)">
