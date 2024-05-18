@@ -137,7 +137,7 @@ onMounted(() => {
 
 <style scoped>
 .navbar {
-  height: 75px;
+  height: 70px;
   font-size: large;
   font-family: 'Work Sans';
 }
