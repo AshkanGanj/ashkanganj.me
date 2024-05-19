@@ -19,7 +19,7 @@
           on system development, network security, and computer vision. During my Bachelor, I also worked as a part-time
           web developer at <span><a href="https://ravanertebat.com/">Access Endless
               Communication(AEC),</a></span>company.</p>
-        <div class="text-center profile-links">
+        <div class="btn-group profile-links">
           <a href="https://www.linkedin.com" class="btn btn-outline-secondary" v-tooltip.bottom="'LinkedIn'"
             target="_blank">
             <i class="bi bi-linkedin d-none d-sm-inline"></i> LinkedIn
@@ -30,11 +30,11 @@
           </a>
           <a href="https://scholar.google.com" class="btn btn-outline-secondary"
             v-tooltip.bottom="'Google Scholar'" target="_blank">
-            <i class="bi bi-google d-none d-sm-inline"></i> Google Scholar
+              <i class="bi d-none d-sm-inline bi-google"></i> Google Scholar
           </a>
           <a href="https://twitter.com " class="btn btn-outline-secondary" v-tooltip.bottom="'Twitter'"
             target="_blank">
-            <i class="bi bi-twitter d-none d-sm-inline"></i> X(Twitter)
+              <i class="bi bi-twitter d-sm-inline d-none"></i> X
           </a>
           <a href="mailto:aganj@wpi.edu" class="btn btn-outline-secondary">
             <i class="bi bi-envelope-fill d-none d-sm-inline"></i> Email
@@ -82,13 +82,13 @@ p {
 }
 
 .profile-links >.btn{
-  padding: 1px 3px;
+  padding: 2px 5px;
   /* font-size: small; */
 }
 
 .profile-links > a {
   font-size: 0.96rem;
-  margin: 2px 2px;
+  /* margin: 2px 2px; */
 }
  
 .img-fluid {
