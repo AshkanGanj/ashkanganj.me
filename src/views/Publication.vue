@@ -1,7 +1,11 @@
 <template>
   <div class="container border-bottom">
     <div class="text-start pt-4">
-      <h2 class="section-title">Publications</h2>
+      <h2>Research</h2>
+      <p class="text-justify">My research is mainly focused on computer vision, 3D vision, and mobile Augmented Reality(AR). Currently, I am
+        working on a fundamental task of 3D vision: depth estimation. I am looking to improve the accuracy and
+        robustness of current depth estimation models and better integrate these models into mobile AR scenarios.</p>
+
     </div>
     <div class="row">
       <div class="col-md-12" v-for="(publication, index) in publications" :key="index">
@@ -12,24 +16,23 @@
           <div class="col-lg-9">
             <div class="publication-item p-3 bg-body-tertiary">
               <div class="d-flex justify-content-between">
-                <h3>{{ publication.title }}</h3>
-                <span class="">{{ publication.date }}</span>
+                <h5 class="text-truncate" style="max-width: 85%;">{{ publication.title }}</h5>
+                <span class="d-none d-md-block">{{ publication.date }}</span>
               </div>
               <div class="pb-2">
-                <em>
-                  <template v-for="(author, index) in publication.authors" :key="index">
-                    <span>
-                      <template v-if="author === 'Ashkan Ganj'">
-                        <span class="me">{{ author }}</span>
-                      </template>
-                      <template v-else>
-                        {{ author }}
-                      </template>
-                      <template v-if="index < publication.authors.length - 1">,
-                      </template>
-                    </span>
-                  </template>
-                </em>
+                <template v-for="(author, index) in publication.authors" :key="index">
+                  <span class="fst-italic">
+                    <template v-if="author === 'Ashkan Ganj'">
+                      <span class="me">{{ author }}</span>
+                    </template>
+                    <template v-else>
+                      {{ author }}
+                    </template>
+                    <template v-if="index < publication.authors.length - 1">,
+                    </template>
+                  </span>
+                </template>
+
               </div>
               <p>
                 <span class="" v-if="publication.venue">{{ publication.venue }} :</span>
@@ -39,10 +42,11 @@
                 🏆 {{ publication.award }}
               </div>
               <div class="btn-group publication-link">
-                <a v-if="publication.website" :href="publication.website" target="_blank"
-                  class="btn btn-outline-secondary"><i class="bi bi-globe"></i> Website</a>
                 <a v-if="publication.link" :href="publication.link" target="_blank" class="btn btn-outline-secondary"><i
                     class="bi bi-file-earmark-pdf"></i> Paper</a>
+                <a v-if="publication.website" :href="publication.website" target="_blank"
+                  class="btn btn-outline-secondary"><i class="bi bi-globe"></i> Website</a>
+
                 <a v-if="publication.github" :href="publication.github" target="_blank"
                   class="btn btn-outline-secondary"><i class="bi bi-github"></i> Code</a>
                 <a v-if="publication.arxiv" :href="publication.arxiv" target="_blank"
@@ -131,8 +135,8 @@ export default {
   margin-bottom: 5px;
 }
 
-.publication-item h3 {
-  font-size: 24px;
+.publication-item h5 {
+  /* font-size: 24px; */
   color: rgb(29, 149, 230);
 }
 

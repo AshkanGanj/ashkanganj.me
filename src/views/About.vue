@@ -1,50 +1,44 @@
 <template>
-  <div class="py-3 container border-bottom">
+  <div class="py-5 container border-bottom">
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-lg-4 text-center">
         <img src="/img/main.jpg" alt="Ashkan Ganj" class="img-fluid shadow-sm rounded-1" />
       </div>
-      <div class="col-md-8">
+      <div class="col-lg-8">
         <h1 style="font-family: 'Work Sans';">Hello!</h1>
         <p class="text-justify">
-          I am a computer science Ph.D. student at <span><a href="https://www.wpi.edu/" target="_blank">Worcester
-              Polytechnic Institute (WPI)</a></span>, advised by my kind advisor <span><a href="https://tianguo.info/"
-              target="_blank"> Prof. Tian Guo</a></span>. I'm part of the <span><a href="#">Cake Lab</a></span>,
-          focusing on research in computer vision and its application on mobile AR
+          I am a second year M.S./Ph.D. student in Computer Science at <span><a href="https://www.wpi.edu/"
+              target="_blank">Worcester
+              Polytechnic Institute (WPI)</a></span>, advised by <span><a href="https://tianguo.info/" target="_blank">
+              Prof. Tian Guo</a></span>. I'm part of the <span><a href="#">Cake Lab</a></span>. My research focuses on
+          computer vision, particularly 3D vision, and its applications in Augmented Reality(AR).
         </p>
-        <p class="text-justify">
-          My research is primarily centered on the field of Computer Vision, with a profound emphasis on 3D vision and
-          its pivotal role in enhancing Augmented Reality (AR) systems. My interest is driven by the belief that 3D
-          vision technology is fundamental to unlocking the full potential of AR, providing more immersive and
-          interactive experiences that seamlessly blend the digital with the physical. The core of my work involves not
-          only advancing 3D vision techniques but also exploring their innovative applications in AR environments. This
-          includes the development of more sophisticated AR systems that can understand and interact with the 3D
-          structure of the real world in real-time. Additionally, I am committed to the study and application of
-          Optimization and System Design principles, as these are essential for improving AR system performance and user
-          accessibility. Through my research, I aim to contribute to the evolution of AR and 3D vision applications,
-          making them more intuitive, effective, and accessible for users worldwide.
-        </p>
-        <div class="text-start">
-          <button class="btn btn-outline-secondary mx-1" @click="open('linkedin')" v-tooltip.bottom="'LinkedIn'">
-            <i class="fs-5 bi bi-linkedin"></i>
-          </button>
-          <button class="btn btn-outline-secondary mx-1" @click="open('github')" v-tooltip.bottom="'GitHub'">
-            <i class="fs-5 bi bi-github"></i>
-          </button>
-          <button class="btn btn-outline-secondary mx-1" @click="open('scholar')" v-tooltip.bottom="'Google scholar'">
-            <i class="fs-5 bi bi-google"></i>
-          </button>
-          <button class="btn btn-outline-secondary mx-1" @click="open('twitter')" v-tooltip.bottom="'twitter'">
-            <i class="fs-5 bi bi-twitter"></i>
-          </button>
-          <button class="btn btn-outline-secondary mx-1" @click="toggleEmailVisibility">
-            <i class="fs-5 bi bi-envelope-fill"></i>
-          </button>
-          <transition-group name="list" tag="p">
-            <p class="email-item" v-if="emailVisible" v-for="email in emails" :key="email">
-              <i class="bi bi-envelope-fill"></i> {{ email }}
-            </p>
-          </transition-group>
+        <p class="text-justify"> I did my B.E. in Electrical and Computer Engineering at the <span><a
+              href="https://uma.ac.ir/index.php?slc_lang=en">University of Mohaghegh Ardabili(UMA)</a></span>, where I
+          worked
+          on system development, network security, and computer vision. During my Bachelor, I also worked as a part-time
+          web developer at <span><a href="https://ravanertebat.com/">Access Endless
+              Communication(AEC),</a></span>company.</p>
+        <div class="text-center profile-links">
+          <a href="https://www.linkedin.com" class="btn btn-outline-secondary" v-tooltip.bottom="'LinkedIn'"
+            target="_blank">
+            <i class="bi bi-linkedin d-none d-sm-inline"></i> LinkedIn
+          </a>
+          <a href="https://github.com" class="btn btn-outline-secondary" v-tooltip.bottom="'GitHub'"
+            target="_blank">
+            <i class="bi bi-github d-none d-sm-inline"></i> Github
+          </a>
+          <a href="https://scholar.google.com" class="btn btn-outline-secondary"
+            v-tooltip.bottom="'Google Scholar'" target="_blank">
+            <i class="bi bi-google d-none d-sm-inline"></i> Google Scholar
+          </a>
+          <a href="https://twitter.com " class="btn btn-outline-secondary" v-tooltip.bottom="'Twitter'"
+            target="_blank">
+            <i class="bi bi-twitter d-none d-sm-inline"></i> X(Twitter)
+          </a>
+          <a href="mailto:aganj@wpi.edu" class="btn btn-outline-secondary">
+            <i class="bi bi-envelope-fill d-none d-sm-inline"></i> Email
+          </a>
         </div>
       </div>
     </div>
@@ -53,8 +47,6 @@
 
 <script setup>
 import { ref } from "vue";
-
-
 
 const emailVisible = ref(false);
 const emails = ref(["AshkanGanj@gmail.com", "aganj@wpi.edu"]);
@@ -84,25 +76,33 @@ const open = (url) => {
 </script>
 
 <style scoped>
+
 p {
-  font-size: large;
+  font-size: 1.05rem;
 }
 
-.list-move {
-  transition: transform 0.5s;
+.profile-links >.btn{
+  padding: 1px 3px;
+  /* font-size: small; */
 }
 
-.email-item {
-  font-size: 1.2rem;
-  margin-top: 1rem;
-  background-color: #000;
-  padding: 0.4rem 0.5rem;
-  border-radius: 5px;
-  display: inline-block;
-  margin: 10px 5px;
+.profile-links > a {
+  font-size: 0.96rem;
+  margin: 2px 2px;
 }
-
+ 
 .img-fluid {
-  border-radius: 10px;
+  max-width: 100%;
+  height: 300px;
 }
+
+@media (max-width: 992px) {
+  .img-fluid {
+    height: 250px;
+    margin-bottom: 20px;
+  }
+  .profile-links{
+    text-align: start!important;
+  }
+} 
 </style>

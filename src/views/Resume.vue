@@ -111,29 +111,29 @@
 import { capitalize, ref } from 'vue';
 
 const resumeItems = ref([
-  {
-    name: 'Education',
-    icon: 'https://img.icons8.com/color/96/teaching.png',
-    items: [
-      {
-        title: 'Ph.D. of Computer Science',
-        date: '2023 - Current',
-        institution: 'Worcester Polytechnic Institute (WPI), Worcester, USA',
-        // details: [
-        //   'Advisor: <a href="https://tianguo.info/">Tian Guo</a>'
-        // ]
-      },
-      {
-        title: 'Bachelor of Science in Computer Engineering',
-        date: '2018 - 2022',
-        institution: 'University of Mohaghegh Ardabili, Ardabil, IR',
-        details: [
-          'Awarded distinguished student.',
-          '<span class="fw-bold">Final Project:</span> LR-Net: A Block-based Convolutional Neural Network for Low-Resolution Image Classification (<a href="https://link.springer.com/article/10.1007/s40998-023-00618-5">Link</a>)'
-        ]
-      }
-    ]
-  },
+  // {
+  //   name: 'Education',
+  //   icon: 'https://img.icons8.com/color/96/teaching.png',
+  //   items: [
+  //     {
+  //       title: 'Ph.D. of Computer Science',
+  //       date: '2023 - Current',
+  //       institution: 'Worcester Polytechnic Institute (WPI), Worcester, USA',
+  //       // details: [
+  //       //   'Advisor: <a href="https://tianguo.info/">Tian Guo</a>'
+  //       // ]
+  //     },
+  //     {
+  //       title: 'Bachelor of Science in Computer Engineering',
+  //       date: '2018 - 2022',
+  //       institution: 'University of Mohaghegh Ardabili, Ardabil, IR',
+  //       details: [
+  //         'Awarded distinguished student.',
+  //         '<span class="fw-bold">Final Project:</span> LR-Net: A Block-based Convolutional Neural Network for Low-Resolution Image Classification (<a href="https://link.springer.com/article/10.1007/s40998-023-00618-5">Link</a>)'
+  //       ]
+  //     }
+  //   ]
+  // },
   {
     name: 'Academic Experiences',
     icon: 'https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-academic-university-flaticons-lineal-color-flat-icons.png',
@@ -161,19 +161,19 @@ const resumeItems = ref([
       }
     ]
   },
-  {
-    name: 'Professional Experiences',
-    icon: 'https://img.icons8.com/color-glass/96/education.png',
-    items: [
-      {
-        title: 'Front-End Developer',
-        date: '2020 - 2021',
-        institution: 'Access Endless Communication(AEC), Tehran, IR',
-        details: [
-          'Head of Front-End Team',
-        ]
-      }
-    ]
-  }
+  // {
+  //   name: 'Professional Experiences',
+  //   icon: 'https://img.icons8.com/color-glass/96/education.png',
+  //   items: [
+  //     {
+  //       title: 'Front-End Developer',
+  //       date: '2020 - 2021',
+  //       institution: 'Access Endless Communication(AEC), Tehran, IR',
+  //       details: [
+  //         'Head of Front-End Team',
+  //       ]
+  //     }
+  //   ]
+  // }
 ]);
 </script>
