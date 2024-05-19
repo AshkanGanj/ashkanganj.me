@@ -14,42 +14,42 @@ import Certificate from "../views/Certificate.vue";
       <About />
     </section>
     <section class="">
-      <Resume />
-    </section>
-    <section>
       <Publication />
     </section>
-    <section class="">
-      <Skill />
-    </section>
     <section>
-      <Certificate />
+      <Resume />
     </section>
-    <footer class="">
+    <!-- <section class="">
+      <Skill />
+    </section> -->
+    <!-- <section>
+      <Certificate />
+    </section> -->
+    <footer clas>
       <div class="border-top container">
         <ul class="text-center">
-          <li>&copy; Ashkan Ganj 2023</li>
-          <li>Icons by <span><a href="https://icons8.com/">icons8</a></span></li>
+          <li>&copy; Ashkan Ganj (Last updated: May 2024)</li>
+          <li>You can find my template <a class="link-secondary" href="https://github.com/AshkanGanj/ashkanganj.me/tree/main">here</a></li>
         </ul>
       </div>
     </footer>
   </main>
 </template>
 <style scoped>
-
-
-.footer-wrap{
+.footer-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-ul{
+
+ul {
   list-style: none;
   padding: 10px;
   margin: 0;
 }
-ul li{
+
+ul li {
   padding: 4px;
 }
 </style>
