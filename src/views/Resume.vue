@@ -14,7 +14,7 @@
                 <span v-if="item.date" class="">{{ item.date }}</span>
               </div>
               <p class="m-0" v-if="item.title"><em>{{ item.title }}</em></p>
-              <ul class="m-0">
+              <ul class="mt-0">
                 <li v-for="(detail, detailIndex) in item.details" :key="detailIndex" v-html="detail"></li>
               </ul>
             </div>
