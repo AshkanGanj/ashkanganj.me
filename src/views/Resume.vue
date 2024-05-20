@@ -1,26 +1,22 @@
 <template>
   <div class="container">
-    <div class="timeline pt-4">
-      <div class="row">
-        <div class="col-md-6 col-sm-12 timeline-item" v-for="(category, index) in resumeItems" :key="index">
-          <div class="timeline-content border shadow-sm">
-            <!-- <h3 class="resume-title">{{ category.name }}</h3> -->
-            <div class="resume-item" v-for="(item, itemIndex) in category.items" :key="itemIndex"
-              :class="{ 'border-bottom mb-3': itemIndex !== category.items.length - 1 }">
-              <div class="timeline-head">
-                <h2>{{ category.name }}</h2>
+    <div class="row">
+      <div class="col-lg-6 col-12" v-for="(category, index) in resumeItems" :key="index">
+        <div class="mt-4">
+          <h3>{{ category.name }}</h3>
+        </div>
+        <div  :class="['my-3 rounded-0 p-3', index % 2 === 0 ? 'bg-body-tertiary' : 'bg-body-secondary']">
+          <div class="" v-for="(item, itemIndex) in category.items" :key="itemIndex"
+            :class="{ 'border-bottom mb-3': itemIndex !== category.items.length - 1 }">
+            <div>
+              <div class="d-flex justify-content-between">
+                <h6 class="fw-bold">{{ item.institution }}</h6>
+                <span v-if="item.date" class="">{{ item.date }}</span>
               </div>
-              <div class="timeline-body">
-                <h4>{{ item.title }}</h4>
-
-                <p><span class="badge-btn date">{{ item.date }}</span></p>
-                <p><em>{{ item.institution }}</em></p>
-                <p class="text-justify">
-                <ul>
-                  <li v-for="(detail, detailIndex) in item.details" :key="detailIndex" v-html="detail"></li>
-                </ul>
-                </p>
-              </div>
+              <p class="m-0" v-if="item.title"><em>{{ item.title }}</em></p>
+              <ul class="m-0">
+                <li v-for="(detail, detailIndex) in item.details" :key="detailIndex" v-html="detail"></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -30,82 +26,7 @@
 </template>
 
 
-<style scoped>
-.section-title {
-  margin: 0 auto;
-  text-align: center;
-}
-
-.timeline {
-  position: relative;
-  margin: 40px 0;
-  margin-bottom: 0;
-}
-
-.timeline-container {
-  position: relative;
-  width: 100%;
-}
-
-.timeline-item {
-  position: relative;
-  /* width: 100%; */
-  margin-bottom: 4rem;
-}
-
-.timeline-content {
-  position: relative;
-  width: 100%;
-  padding: 15px;
-  border-radius: 0px;
-
-
-}
-
-.timeline-head {
-  position: absolute;
-  top: -30px;
-  left: 0;
-}
-
-.timeline-head h2 {
-  margin: -20px 0px;
-}
-
-
-.timeline-body h4 {
-  margin-top: 0;
-  font-size: 18px;
-  font-weight: 600;
-  color: rgb(29, 149, 230);
-}
-
-.timeline-body p {
-  margin-bottom: 8px;
-}
-
-.timeline-body ul {
-  list-style: none;
-  padding-left: 15px;
-}
-
-.timeline-body ul li {
-  position: relative;
-  padding-left: 15px;
-  margin-bottom: 5px;
-}
-
-.timeline-body ul li:before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 0;
-  width: 8px;
-  height: 8px;
-  background-color: rgb(29, 149, 230);
-  border-radius: 50%;
-}
-</style>
+<style scoped></style>
 
 <script setup>
 import { capitalize, ref } from 'vue';
@@ -113,7 +34,6 @@ import { capitalize, ref } from 'vue';
 const resumeItems = ref([
   // {
   //   name: 'Education',
-  //   icon: 'https://img.icons8.com/color/96/teaching.png',
   //   items: [
   //     {
   //       title: 'Ph.D. of Computer Science',
@@ -136,17 +56,17 @@ const resumeItems = ref([
   // },
   {
     name: 'Teaching Experiences',
-    icon: 'https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-academic-university-flaticons-lineal-color-flat-icons.png',
     items: [
       {
-        title: 'Teaching Assistant',
+        title: 'Graduate Teaching Assistant',
         date: '2023 - 2024',
         institution: 'Worcester Polytechnic Institute (WPI), Worcester, USA',
         details: [
           '(CS 4233) Object-Oriented Analysis and Design',
           '(CS 1101) Introduction to Programming Design',
           '(CS 2303) Systems Programming Concepts',
-          '(CS 2119) Application Building with Object-Oriented Concepts'
+          '(CS 2119) Application Building with Object-Oriented Concepts',
+          '(CS 2303) System programming concepts'
         ]
       },
       {
@@ -154,6 +74,7 @@ const resumeItems = ref([
         date: '2021 - 2022',
         institution: 'University of Mohaghegh Ardabil, Ardabil, IR',
         details: [
+          'Digital System Lab',
           'Algorithm and Data Structure',
           'Software Engineering',
           'Discrete Mathematics'
@@ -161,19 +82,22 @@ const resumeItems = ref([
       }
     ]
   },
-  // {
-  //   name: 'Professional Experiences',
-  //   icon: 'https://img.icons8.com/color-glass/96/education.png',
-  //   items: [
-  //     {
-  //       title: 'Front-End Developer',
-  //       date: '2020 - 2021',
-  //       institution: 'Access Endless Communication(AEC), Tehran, IR',
-  //       details: [
-  //         'Head of Front-End Team',
-  //       ]
-  //     }
-  //   ]
-  // }
+  {
+    name: 'Skills',
+    items: [
+      {
+        // title: 'Programming Languages',
+        // date: '2020 - 2021',
+        institution: 'Programming',
+        details: [
+          'Python, C++, JavaScript, TypeScript, Java, C#',
+          'PyTorch, TensorFlow, Keras, OpenCV, Scikit-learn, Pandas, NumPy',
+          'PostgreSQL, MySQL, MongoDB, SQLite',
+          'Windows, Debian/GNU Linux',
+          'Web developement'
+        ]
+      }
+    ]
+  }
 ]);
 </script>

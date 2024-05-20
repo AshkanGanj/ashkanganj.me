@@ -4,7 +4,7 @@
     text-align: justify;
 }
 
-.badge-btn{
+.badge-date{
     background-color: #000;
     border-radius: 0x;
     padding: 5px 10px;
@@ -17,26 +17,8 @@
     margin-right: 10px;
 }
 
-.badge-btn:hover{
-    background-color: gray;
-    color: #fff;
-    border: 1px solid white;
-}
-
-
-.date-badge{
+.badge-date:hover{
     pointer-events: none;
-    background-color: #000;
-    font-weight: bold;
-    border-radius: 0x;
-    padding: 4px 10px;
-    color: #ffffff;
-    font-size: 13px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    border: 1px solid #000;
-    margin-right: 10px;
 }
 
 p a{

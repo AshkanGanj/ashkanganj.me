@@ -2,7 +2,7 @@
   <div class="py-5 container border-bottom">
     <div class="row">
       <div class="col-lg-4 text-center">
-        <img src="/img/main.jpg" alt="Ashkan Ganj" class="img-fluid shadow-sm rounded-1" />
+        <img src="/img/main.jpg" alt="Ashkan Ganj" class="img-fluid shadow rounded-0" />
       </div>
       <div class="col-lg-8">
         <h1 style="font-family: 'Work Sans';">Hello!</h1>
@@ -105,4 +105,5 @@ p {
     text-align: start!important;
   }
 } 
+
 </style>
