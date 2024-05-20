@@ -51,3 +51,8 @@ p a{
 .btn{
     border-radius: 0px!important;
 }
+
+.btn-outline-secondary:hover{
+    background-color: gray;
+    color: #fff!important;
+}

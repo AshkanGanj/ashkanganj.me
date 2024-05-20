@@ -19,9 +19,7 @@ import Certificate from "../views/Certificate.vue";
     <section>
       <Resume />
     </section>
-    <!-- <section class="">
-      <Skill />
-    </section> -->
+÷
     <!-- <section>
       <Certificate />
     </section> -->
