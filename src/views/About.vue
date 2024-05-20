@@ -20,19 +20,19 @@
           web developer at <span><a href="https://ravanertebat.com/">Access Endless
               Communication(AEC),</a></span>company.</p>
         <div class="btn-group profile-links">
-          <a href="https://www.linkedin.com" class="btn btn-outline-secondary text-body-secondary" v-tooltip.bottom="'LinkedIn'"
+          <a href="https://www.linkedin.com/in/ashkan-ganj" class="btn btn-outline-secondary text-body-secondary" v-tooltip.bottom="'LinkedIn'"
             target="_blank">
             <i class="bi bi-linkedin d-none d-sm-inline"></i> LinkedIn
           </a>
-          <a href="https://github.com" class="btn btn-outline-secondary text-body-secondary" v-tooltip.bottom="'GitHub'"
+          <a href="https://github.com/AshkanGanj" class="btn btn-outline-secondary text-body-secondary" v-tooltip.bottom="'GitHub'"
             target="_blank">
             <i class="bi bi-github d-none d-sm-inline"></i> Github
           </a>
-          <a href="https://scholar.google.com" class="btn btn-outline-secondary text-body-secondary"
+          <a href="https://scholar.google.com/citations?user=Zk68YogAAAAJ&hl=en" class="btn btn-outline-secondary text-body-secondary"
             v-tooltip.bottom="'Google Scholar'" target="_blank">
               <i class="bi d-none d-sm-inline bi-google"></i> Google Scholar
           </a>
-          <a href="https://twitter.com " class="btn btn-outline-secondary text-body-secondary" v-tooltip.bottom="'Twitter'"
+          <a href="https://twitter.com/GanjAshkan" class="btn btn-outline-secondary text-body-secondary" v-tooltip.bottom="'Twitter'"
             target="_blank">
               <i class="bi bi-twitter d-sm-inline d-none"></i> X
           </a>
