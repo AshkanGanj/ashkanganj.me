@@ -43,16 +43,16 @@
                 🏆 {{ publication.award }}
               </div>
               <div class="btn-group publication-link">
-                <a v-if="publication.link" :href="publication.link" target="_blank" class="btn btn-outline-secondary">
+                <a v-if="publication.link" :href="publication.link" target="_blank" class="btn btn-outline-secondary text-body-secondary">
                   <i class="bi bi-file-earmark-pdf"></i> Paper
                 </a>
-                <a v-if="publication.website" :href="publication.website" target="_blank" class="btn btn-outline-secondary">
+                <a v-if="publication.website" :href="publication.website" target="_blank" class="btn btn-outline-secondary text-body-secondary">
                   <i class="bi bi-globe"></i> Website
                 </a>
-                <a v-if="publication.github" :href="publication.github" target="_blank" class="btn btn-outline-secondary">
+                <a v-if="publication.github" :href="publication.github" target="_blank" class="btn btn-outline-secondary text-body-secondary">
                   <i class="bi bi-github"></i> Code
                 </a>
-                <a v-if="publication.arxiv" :href="publication.arxiv" target="_blank" class="btn btn-outline-secondary">
+                <a v-if="publication.arxiv" :href="publication.arxiv" target="_blank" class="btn btn-outline-secondary text-body-secondary">
                   arxiv
                 </a>
               </div>
