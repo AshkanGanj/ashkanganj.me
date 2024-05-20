@@ -60,7 +60,7 @@ const resumeItems = ref([
       {
         title: 'Graduate Teaching Assistant',
         date: '2023 - 2024',
-        institution: 'Worcester Polytechnic Institute (WPI), Worcester, USA',
+        institution: 'Worcester Polytechnic Institute (WPI) , USA',
         details: [
           '(CS 4233) Object-Oriented Analysis and Design',
           '(CS 1101) Introduction to Programming Design',
@@ -72,7 +72,7 @@ const resumeItems = ref([
       {
         title: 'Teaching Assistant',
         date: '2021 - 2022',
-        institution: 'University of Mohaghegh Ardabil, Ardabil, IR',
+        institution: 'University of Mohaghegh Ardabil, Iran',
         details: [
           'Digital System Lab',
           'Algorithm and Data Structure',
