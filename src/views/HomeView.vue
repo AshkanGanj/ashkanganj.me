@@ -19,11 +19,10 @@ import Certificate from "../views/Certificate.vue";
     <section>
       <Resume />
     </section>
-÷
     <!-- <section>
       <Certificate />
     </section> -->
-    <footer clas>
+    <footer>
       <div class="border-top container">
         <ul class="text-center">
           <li>&copy; Ashkan Ganj (Last updated: May 2024)</li>
