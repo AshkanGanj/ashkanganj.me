@@ -1,5 +1,5 @@
 <template>
-  <div class="container border-bottom">
+  <div class="container">
     <div class="timeline pt-4">
       <div class="row">
         <div class="col-md-6 col-sm-12 timeline-item" v-for="(category, index) in resumeItems" :key="index">
@@ -135,7 +135,7 @@ const resumeItems = ref([
   //   ]
   // },
   {
-    name: 'Academic Experiences',
+    name: 'Teaching Experiences',
     icon: 'https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-academic-university-flaticons-lineal-color-flat-icons.png',
     items: [
       {

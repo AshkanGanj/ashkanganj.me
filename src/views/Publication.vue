@@ -6,7 +6,7 @@
         My research is mainly focused on computer vision, 3D vision, and mobile Augmented Reality(AR). Currently, I am
         working on a fundamental task of 3D vision: depth estimation. I am looking to improve the accuracy and
         robustness of current depth estimation models and better integrate these models into mobile AR scenarios.
-        For full list of my publications, please visit <a href="https://scholar.google.com/citations?user=Zk68YogAAAAJ&hl=en">here.</a>
+        For full list of my publications, please visit <a href="https://scholar.google.com/citations?user=Zk68YogAAAAJ&hl=en" target="_blank">here.</a>
       </p>
     </div>
     <div class="row">
