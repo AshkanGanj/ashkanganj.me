@@ -1,6 +1,6 @@
 <template>
-  <div class="container border-bottom">
-    <div class="text-start pt-4">
+  <div class="container">
+    <div class="text-start">
       <h2>Research</h2>
       <p class="text-justify">
         My research is mainly focused on computer vision, 3D vision, and mobile Augmented Reality(AR). Currently, I am

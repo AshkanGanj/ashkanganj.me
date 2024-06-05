@@ -2,7 +2,7 @@
   <header>
     <nav class="navbar navbar-expand-lg">
       <div class="container text-white py-2 border-bottom">
-        <a class="navbar-brand fs-3" href="#">Ashkan <span>Ganj</span></a>
+        <a class="navbar-brand fs-2" href="#">Ashkan <span class="">Ganj</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>

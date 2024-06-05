@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-lg-6 col-12" v-for="(category, index) in resumeItems" :key="index">
         <div class="mt-4">
-          <h3>{{ category.name }}</h3>
+          <h2>{{ category.name }}</h2>
         </div>
         <div  :class="['my-3 rounded-0 p-3', index % 2 === 0 ? 'bg-body-tertiary' : 'bg-body-secondary']">
           <div class="" v-for="(item, itemIndex) in category.items" :key="itemIndex"
@@ -24,9 +24,6 @@
     </div>
   </div>
 </template>
-
-
-<style scoped></style>
 
 <script setup>
 import { capitalize, ref } from 'vue';
