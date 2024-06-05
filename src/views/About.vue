@@ -6,14 +6,14 @@
       </div>
       <div class="col-lg-8">
         <h1 style="font-family: 'Work Sans';">Hello!</h1>
-        <p class="text-justify">
+        <p class="text-justify description">
           I am a second year M.S./Ph.D. student in Computer Science at <span><a href="https://www.wpi.edu/"
               target="_blank">Worcester
               Polytechnic Institute (WPI)</a></span>, advised by <span><a href="https://tianguo.info/" target="_blank">
               Prof. Tian Guo</a></span>. I'm part of the <span><a href="#">Cake Lab</a></span>. My research focuses on
           computer vision, particularly 3D vision, and its applications in Augmented Reality(AR).
         </p>
-        <p class="text-justify"> I did my B.E. in Electrical and Computer Engineering at the <span><a
+        <p class="text-justify description"> I did my B.E. in Electrical and Computer Engineering at the <span><a
               href="https://uma.ac.ir/index.php?slc_lang=en">University of Mohaghegh Ardabili(UMA)</a></span>, where I
           worked
           on system development, network security, and computer vision. During my Bachelor, I also worked as a part-time
@@ -76,10 +76,6 @@ const open = (url) => {
 </script>
 
 <style scoped>
-
-p {
-  font-size: 1.05rem;
-}
 
 .profile-links >.btn{
   padding: 2px 5px;

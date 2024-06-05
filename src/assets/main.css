@@ -1,5 +1,10 @@
 @import './base.css';
 
+.description {
+    font-size: 1.07rem;
+
+}
+
 .text-justify{
     text-align: justify;
 }

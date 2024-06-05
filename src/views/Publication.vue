@@ -2,7 +2,7 @@
   <div class="container">
     <div class="text-start">
       <h2>Research</h2>
-      <p class="text-justify">
+      <p class="text-justify description">
         My research is mainly focused on computer vision, 3D vision, and mobile Augmented Reality(AR). Currently, I am
         working on a fundamental task of 3D vision: depth estimation. I am looking to improve the accuracy and
         robustness of current depth estimation models and better integrate these models into mobile AR scenarios.
@@ -129,6 +129,7 @@ export default {
 </script>
 
 <style scoped>
+
 .publication-item {
   border-radius: 0px;
   margin-bottom: 5px;
