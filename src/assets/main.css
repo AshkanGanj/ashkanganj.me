@@ -31,7 +31,7 @@
   pointer-events: none;
 }
 
-a {
+p a {
   text-decoration: none !important;
   color: var(--text-highlights) !important;
 }
@@ -54,5 +54,8 @@ a {
 }
 
 .navbar-brand span {
+  color: var(--text-highlights);
+}
+footer a {
   color: var(--text-highlights);
 }
