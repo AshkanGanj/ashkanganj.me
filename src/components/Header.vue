@@ -153,9 +153,7 @@ onMounted(() => {
   }
 }
 
-.navbar-brand span {
-  color: rgb(29, 149, 230);
-}
+
 
 [data-bs-theme="dark"] {
   background-color: #121212;

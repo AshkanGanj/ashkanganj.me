@@ -6,8 +6,13 @@
         My research is mainly focused on computer vision, 3D vision, and mobile Augmented Reality(AR). Currently, I am
         working on a fundamental task of 3D vision: depth estimation. I am looking to improve the accuracy and
         robustness of current depth estimation models and better integrate these models into mobile AR scenarios.
-        For full list of my publications, please visit <a href="https://scholar.google.com/citations?user=Zk68YogAAAAJ&hl=en" target="_blank">here.</a>
+
       </p>
+    </div>
+    <div>
+      <h4>Publications</h4>
+      <p class="text-justify description">For full list of my publications, please visit <a
+          href="https://scholar.google.com/citations?user=Zk68YogAAAAJ&hl=en" target="_blank">here.</a></p>
     </div>
     <div class="row">
       <div class="col-md-12" v-for="(publication, index) in publications" :key="index">
@@ -16,11 +21,10 @@
             <img class="img-fluid" :src="publication.img" alt="Publication Image" />
           </div>
           <div class="col-lg-9">
-            <div
-              :class="['publication-item p-3', index % 2 === 0 ? 'bg-body-tertiary' : 'bg-body-secondary']">
+            <div :class="['publication-item p-3', index % 2 === 0 ? 'bg-body-tertiary' : 'bg-body-secondary']">
               <div class="d-flex justify-content-between">
                 <h5 class="text-truncate" style="max-width: 85%;">{{ publication.title }}</h5>
-                <span class="d-none d-md-block">{{ publication.date }}</span>
+                <span class="d-none d-md-block">{{ publication.venue }}</span>
               </div>
               <div class="pb-2">
                 <template v-for="(author, index) in publication.authors" :key="index">
@@ -37,23 +41,26 @@
                 </template>
               </div>
               <p>
-                <span class="" v-if="publication.venue">{{ publication.venue }} :</span>
                 {{ publication.journal }}
               </p>
               <div v-if="publication.award" class="fw-bold mb-2">
                 🏆 {{ publication.award }}
               </div>
               <div class="btn-group publication-link">
-                <a v-if="publication.link" :href="publication.link" target="_blank" class="btn btn-outline-secondary text-body-secondary">
+                <a v-if="publication.link" :href="publication.link" target="_blank"
+                  class="btn btn-outline-secondary text-body-secondary">
                   <i class="bi bi-file-earmark-pdf"></i> Paper
                 </a>
-                <a v-if="publication.website" :href="publication.website" target="_blank" class="btn btn-outline-secondary text-body-secondary">
+                <a v-if="publication.website" :href="publication.website" target="_blank"
+                  class="btn btn-outline-secondary text-body-secondary">
                   <i class="bi bi-globe"></i> Website
                 </a>
-                <a v-if="publication.github" :href="publication.github" target="_blank" class="btn btn-outline-secondary text-body-secondary">
+                <a v-if="publication.github" :href="publication.github" target="_blank"
+                  class="btn btn-outline-secondary text-body-secondary">
                   <i class="bi bi-github"></i> Code
                 </a>
-                <a v-if="publication.arxiv" :href="publication.arxiv" target="_blank" class="btn btn-outline-secondary text-body-secondary">
+                <a v-if="publication.arxiv" :href="publication.arxiv" target="_blank"
+                  class="btn btn-outline-secondary text-body-secondary">
                   arxiv
                 </a>
               </div>
@@ -71,10 +78,38 @@ export default {
     return {
       publications: [
         {
+          title: "Toward Robust Depth Fusion for Mobile AR With Depth from Focus and Single-Image Priors",
+          img: "/img/papers/ISMAR-pic.png",
+          date: "October-2024",
+          venue: "ISMAR'24",
+          journal:
+            "23rd IEEE International Symposium on Mixed and Augmented Reality ",
+          authors: ["Ashkan Ganj", "Hang Su", "Tian Guo"],
+          award: "",
+          // arxiv: "https://arxiv.org/pdf/2310.14437.pdf",
+          link: "/",
+          // website: "",
+          // github: "https://github.com/cake-lab/Mobile-AR-Depth-Estimation",
+        },
+        {
+          title: "Toward In-Context Environment Sensing for Mobile Augmented Reality",
+          img: "/img/papers/ImmerCom24-pic.png",
+          date: "October-2024",
+          venue: "ImmerCom'24",
+          journal:
+            "2nd ACM Workshop on Mobile Immersive Computing, Networking, and Systems",
+          authors: ["Yiqin Zhao", "Ashkan Ganj", "Tian Guo"],
+          award: "",
+          // arxiv: "https://arxiv.org/pdf/2310.14437.pdf",
+          link: "/",
+          // website: "",
+          // github: "https://github.com/cake-lab/Mobile-AR-Depth-Estimation",
+        },
+        {
           title: "Mobile AR Depth Estimation: Challenges & Prospects",
           img: "/img/papers/MobileARDepth.png",
           date: "February-2024",
-          venue: "HotMobile 2024",
+          venue: "HotMobile'24",
           journal:
             "The 25th International Workshop on Mobile Computing Systems and Applications",
           authors: ["Ashkan Ganj", "Yiqin Zhao", "Hang Su", "Tian Guo"],
@@ -108,7 +143,7 @@ export default {
           title:
             "LR-Net: A Block-based Convolutional Neural Network for Low-Resolution Image Classification",
           img: "/img/papers/LR-Net.png",
-
+          venue: "Journal",
           date: "June-2023",
           journal:
             "Iranian Journal of Science and Technology, Transactions of Electrical Engineering ",
@@ -129,16 +164,12 @@ export default {
 </script>
 
 <style scoped>
-
 .publication-item {
   border-radius: 0px;
   margin-bottom: 5px;
 }
 
-.publication-item h5 {
-  /* font-size: 24px; */
-  color: rgb(29, 149, 230);
-}
+
 
 .publication-item p {
   margin-bottom: 8px;

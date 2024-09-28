@@ -1,45 +1,58 @@
-@import './base.css';
+@import "./base.css";
+
+/* define a color */
+
+:root {
+  --text-highlights: #e68405;
+}
 
 .description {
-    font-size: 1.07rem;
-
+  font-size: 1.07rem;
 }
 
-.text-justify{
-    text-align: justify;
+.text-justify {
+  text-align: justify;
 }
 
-.badge-date{
-    background-color: #000;
-    border-radius: 0x;
-    padding: 5px 10px;
-    color: #ffffff;
-    font-size: 13px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    border: 1px solid #000;
-    margin-right: 10px;
+.badge-date {
+  background-color: #000;
+  border-radius: 0x;
+  padding: 5px 10px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #000;
+  margin-right: 10px;
 }
 
-.badge-date:hover{
-    pointer-events: none;
+.badge-date:hover {
+  pointer-events: none;
 }
 
-p a{
-    text-decoration: none !important;
-    color: rgb(29, 149, 230) !important;
+a {
+  text-decoration: none !important;
+  color: var(--text-highlights) !important;
 }
 
-.text-white{
-    color: #ffffff;
+.text-white {
+  color: #ffffff;
 }
 
-.btn{
-    border-radius: 0px!important;
+.btn {
+  border-radius: 0px !important;
 }
 
-.btn-outline-secondary:hover{
-    background-color: gray;
-    color: #fff!important;
+.btn-outline-secondary:hover {
+  background-color: var(--text-highlights) !important;
+  color: #fff !important;
+}
+
+.publication-item h5 {
+  color: var(--text-highlights);
+}
+
+.navbar-brand span {
+  color: var(--text-highlights);
 }

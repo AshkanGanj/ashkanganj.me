@@ -5,7 +5,7 @@
         <div class="mt-4">
           <h2>{{ category.name }}</h2>
         </div>
-        <div  :class="['my-3 rounded-0 p-3', index % 2 === 0 ? 'bg-body-tertiary' : 'bg-body-secondary']">
+        <div :class="['my-3 rounded-0 p-3', index % 2 === 0 ? 'bg-body-tertiary' : 'bg-body-secondary']">
           <div class="" v-for="(item, itemIndex) in category.items" :key="itemIndex"
             :class="{ 'border-bottom mb-3': itemIndex !== category.items.length - 1 }">
             <div>
@@ -29,34 +29,50 @@
 import { capitalize, ref } from 'vue';
 
 const resumeItems = ref([
-  // {
-  //   name: 'Education',
-  //   items: [
-  //     {
-  //       title: 'Ph.D. of Computer Science',
-  //       date: '2023 - Current',
-  //       institution: 'Worcester Polytechnic Institute (WPI), Worcester, USA',
-  //       // details: [
-  //       //   'Advisor: <a href="https://tianguo.info/">Tian Guo</a>'
-  //       // ]
-  //     },
-  //     {
-  //       title: 'Bachelor of Science in Computer Engineering',
-  //       date: '2018 - 2022',
-  //       institution: 'University of Mohaghegh Ardabili, Ardabil, IR',
-  //       details: [
-  //         'Awarded distinguished student.',
-  //         '<span class="fw-bold">Final Project:</span> LR-Net: A Block-based Convolutional Neural Network for Low-Resolution Image Classification (<a href="https://link.springer.com/article/10.1007/s40998-023-00618-5">Link</a>)'
-  //       ]
-  //     }
-  //   ]
-  // },
   {
-    name: 'Teaching Experiences',
+    name: 'Education',
     items: [
       {
+        title: 'Master of Computer Science',
+        date: '2023 - Present (Expected 2024)',
+        institution: 'Worcester Polytechnic Institute (WPI), USA',
+        // details: [
+        //   'Advisor: <a href="https://tianguo.info/">Tian Guo</a>'
+        // ]
+      },
+      {
+        title: 'Bachelor of Science in Computer Engineering',
+        date: 'Sep, 2018 - July, 2022',
+        institution: 'University of Mohaghegh Ardabili (UMA), IR',
+        details: [
+          'Awarded distinguished student.',
+          '<span class="fw-bold">Final Project:</span> LR-Net: A Block-based Convolutional Neural Network for Low-Resolution Image Classification (<a href="https://link.springer.com/article/10.1007/s40998-023-00618-5">Link</a>)'
+        ]
+      }
+    ]
+  },
+  {
+    name: 'Experiences',
+    items: [
+      {
+        title: 'Research Assistant',
+        date: 'Jun, 2024 - Present',
+        institution: 'Worcester Polytechnic Institute (WPI) , USA',
+        details: [
+          
+        ]
+      },
+      {
+        title: 'Web Developer',
+        date: 'Jun, 2024 - Present',
+        institution: 'Worcester Polytechnic Institute (WPI) , USA',
+        details: [
+          
+        ]
+      },
+      {
         title: 'Graduate Teaching Assistant',
-        date: '2023 - 2024',
+        date: 'Jan, 2023 - May, 2024',
         institution: 'Worcester Polytechnic Institute (WPI) , USA',
         details: [
           '(CS 4233) Object-Oriented Analysis and Design',
