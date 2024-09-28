@@ -1,11 +1,5 @@
 @import "./base.css";
 
-/* define a color */
-
-:root {
-  --text-highlights: #e68405;
-}
-
 .description {
   font-size: 1.07rem;
 }
@@ -31,9 +25,15 @@
   pointer-events: none;
 }
 
-p a {
+p a, footer a, .resume a{
   text-decoration: none !important;
   color: var(--text-highlights) !important;
+}
+
+p a:hover, footer a:hover, .resume a:hover {
+  /* color: var(--text-highlights) !important;
+   */
+    text-decoration: underline !important;
 }
 
 .text-white {
@@ -56,6 +56,8 @@ p a {
 .navbar-brand span {
   color: var(--text-highlights);
 }
-footer a {
-  color: var(--text-highlights);
-}
+
+.dropdown-item.active, .dropdown-item:active {
+    background-color: var(--text-highlights);
+    }
+

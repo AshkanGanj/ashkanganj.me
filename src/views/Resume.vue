@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container resume">
     <div class="row">
       <div class="col-lg-6 col-12" v-for="(category, index) in resumeItems" :key="index">
         <div class="mt-4">
@@ -10,10 +10,10 @@
             :class="{ 'border-bottom mb-3': itemIndex !== category.items.length - 1 }">
             <div>
               <div class="d-flex justify-content-between">
-                <h6 class="fw-bold">{{ item.institution }}</h6>
+                <h6 class="fw-bold">{{ item.title }}</h6>
                 <span v-if="item.date" class="">{{ item.date }}</span>
               </div>
-              <p class="m-0" v-if="item.title"><em>{{ item.title }}</em></p>
+              <p class="m-0" v-if="item.title"><em>{{ item.institution }}</em></p>
               <ul class="mt-0">
                 <li v-for="(detail, detailIndex) in item.details" :key="detailIndex" v-html="detail"></li>
               </ul>
@@ -34,19 +34,20 @@ const resumeItems = ref([
     items: [
       {
         title: 'Master of Computer Science',
-        date: '2023 - Present (Expected 2024)',
+        date: 'Jan, 2023 - Dec, 2024(Expected)',
         institution: 'Worcester Polytechnic Institute (WPI), USA',
-        // details: [
-        //   'Advisor: <a href="https://tianguo.info/">Tian Guo</a>'
-        // ]
+        details: [
+          'Project: Depth Estimation for Mobile AR Applications using camera feature.',
+          // 'Advisor: <a href="https://tianguo.info/">Prof. Tian Guo</a>'
+        ]
       },
       {
-        title: 'Bachelor of Science in Computer Engineering',
+        title: 'Bachelor of Engineering in Computer Engineering',
         date: 'Sep, 2018 - July, 2022',
         institution: 'University of Mohaghegh Ardabili (UMA), IR',
         details: [
           'Awarded distinguished student.',
-          '<span class="fw-bold">Final Project:</span> LR-Net: A Block-based Convolutional Neural Network for Low-Resolution Image Classification (<a href="https://link.springer.com/article/10.1007/s40998-023-00618-5">Link</a>)'
+          'Project: LR-Net: A CNN based approach for Low-Resolution Image Classification (<a href="https://link.springer.com/article/10.1007/s40998-023-00618-5">Paper</a>)'
         ]
       }
     ]
@@ -59,17 +60,12 @@ const resumeItems = ref([
         date: 'Jun, 2024 - Present',
         institution: 'Worcester Polytechnic Institute (WPI) , USA',
         details: [
-          
+          'PI: Prof. <a href="https://tianguo.info/">Tian Guo</a>',
+          'Project: Depth Estimation for Mobile AR Applications using camera feature.',
+          'Designing and implementing AR systems.',
         ]
       },
-      {
-        title: 'Web Developer',
-        date: 'Jun, 2024 - Present',
-        institution: 'Worcester Polytechnic Institute (WPI) , USA',
-        details: [
-          
-        ]
-      },
+      
       {
         title: 'Graduate Teaching Assistant',
         date: 'Jan, 2023 - May, 2024',
@@ -83,11 +79,18 @@ const resumeItems = ref([
         ]
       },
       {
-        title: 'Teaching Assistant',
-        date: '2021 - 2022',
-        institution: 'University of Mohaghegh Ardabil, Iran',
+        title: 'Web Developer',
+        date: 'Sep, 2021 - May, 2022',
+        institution: 'Access Endless Communication (AEC) , IR',
         details: [
-          'Digital System Lab',
+          'Worked as Frontend Developer mainly used Angular to develope the web application.',
+        ]
+      },
+      {
+        title: 'Teaching Assistant',
+        date: 'Sep, 2021 - Dec, 2022',
+        institution: 'University of Mohaghegh Ardabil (UMA), Iran',
+        details: [
           'Algorithm and Data Structure',
           'Software Engineering',
           'Discrete Mathematics'
@@ -114,3 +117,9 @@ const resumeItems = ref([
   }
 ]);
 </script>
+
+<style scoped>
+li a {
+  color: var(--text-highlights);
+}
+</style>
