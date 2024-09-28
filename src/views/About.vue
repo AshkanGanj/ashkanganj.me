@@ -10,7 +10,7 @@
           I am a second year M.S./Ph.D. student in Computer Science at <span><a href="https://www.wpi.edu/"
               target="_blank">Worcester
               Polytechnic Institute (WPI)</a></span>, advised by <span><a href="https://tianguo.info/" target="_blank">
-              Prof. Tian Guo</a></span>. I'm part of the <span><a href="#">Cake Lab</a></span>. My research focuses on
+              Prof. Tian Guo</a></span>. I'm part of the <span><a target="_blank" href="https://cake.wpi.edu/">Cake Lab</a></span>. My research focuses on
           computer vision, particularly 3D vision, and its applications in Augmented Reality(AR).
         </p>
         <p class="text-justify description"> I did my B.E. in Electrical and Computer Engineering at the <span><a
