@@ -2,7 +2,7 @@
   <div class="py-4 container">
     <div class="row">
       <div class="col-lg-4 text-center">
-        <img src="/img/me.JPG" alt="Ashkan Ganj" class="img-fluid shadow rounded-0" />
+        <img src="/img/me.jpg" alt="Ashkan Ganj" class="img-fluid shadow rounded-0" />
       </div>
       <div class="col-lg-8">
         <h1 style="font-family: 'Work Sans';">Hello!</h1>

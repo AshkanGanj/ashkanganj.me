@@ -25,7 +25,7 @@ import Certificate from "../views/Certificate.vue";
     <footer>
       <div class="border-top container">
         <ul class="text-center">
-          <li>&copy; Ashkan Ganj (Last updated: May 2024)</li>
+          <li>&copy; Ashkan Ganj (Last updated: Sep 2024)</li>
           <li>You can find my template <a href="https://github.com/AshkanGanj/ashkanganj.me/">here</a></li>
         </ul>
       </div>
