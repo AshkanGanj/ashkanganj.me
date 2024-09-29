@@ -42,14 +42,14 @@
                     <i class="bi bi-check2 ms-auto d-none"></i>
                   </button>
                 </li>
-                <li>
+                <!-- <li>
                   <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto"
                     aria-pressed="false">
                     <i class="bi bi-circle-half me-2 opacity-50"></i>
                     Auto
                     <i class="bi bi-check2 ms-auto d-none"></i>
                   </button>
-                </li>
+                </li> -->
               </ul>
             </li>
           </ul>
@@ -64,10 +64,7 @@ import { onMounted } from 'vue';
 
 // Function to set the theme on the document
 const setTheme = (theme) => {
-  document.documentElement.setAttribute(
-    'data-bs-theme', 
-    theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme
-  );
+  document.documentElement.setAttribute('data-bs-theme', theme);
 };
 
 // Function to get the stored theme from localStorage
@@ -76,8 +73,8 @@ const getStoredTheme = () => localStorage.getItem('theme');
 // Function to set the theme in localStorage
 const setStoredTheme = (theme) => localStorage.setItem('theme', theme);
 
-// Function to get the preferred theme based on the stored theme or the system preference
-const getPreferredTheme = () => getStoredTheme() || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+// Function to get the preferred theme based on the stored theme or default to 'dark'
+const getPreferredTheme = () => getStoredTheme() || 'dark';
 
 // Function to update the UI to reflect the active theme
 const showActiveTheme = (theme, focus = false) => {
@@ -105,10 +102,6 @@ onMounted(() => {
   setTheme(preferredTheme);
   showActiveTheme(preferredTheme);
 
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-    if (!['light', 'dark'].includes(getStoredTheme())) setTheme(getPreferredTheme());
-  });
-
   document.querySelectorAll('[data-bs-theme-value]').forEach(toggle => {
     toggle.addEventListener('click', () => {
       const theme = toggle.getAttribute('data-bs-theme-value');
@@ -119,6 +112,7 @@ onMounted(() => {
   });
 });
 </script>
+
 
 
 <style scoped>
