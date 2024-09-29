@@ -1,11 +1,11 @@
 <template>
   <div class="container resume">
     <div class="row">
-      <div class="col-lg-6 col-12" v-for="(category, index) in resumeItems" :key="index">
+      <div class="col-md-auto col-12" v-for="(category, index) in resumeItems" :key="index">
         <div class="mt-4">
           <h2>{{ category.name }}</h2>
         </div>
-        <div :class="['my-3 rounded-0 p-3', index % 2 === 0 ? 'bg-body-tertiary' : 'bg-body-secondary']">
+        <div :class="['rounded-0 p-3', index % 2 === 0 ? 'bg-body-tertiary' : 'bg-body-secondary']">
           <div class="" v-for="(item, itemIndex) in category.items" :key="itemIndex"
             :class="{ 'border-bottom mb-3': itemIndex !== category.items.length - 1 }">
             <div>
@@ -14,7 +14,7 @@
                 <span v-if="item.date" class="">{{ item.date }}</span>
               </div>
               <p class="m-0" v-if="item.title"><em>{{ item.institution }}</em></p>
-              <ul class="mt-0">
+              <ul class="">
                 <li v-for="(detail, detailIndex) in item.details" :key="detailIndex" v-html="detail"></li>
               </ul>
             </div>
@@ -48,6 +48,23 @@ const resumeItems = ref([
         details: [
           'Awarded distinguished student.',
           'Project: LR-Net: A CNN based approach for Low-Resolution Image Classification (<a href="https://link.springer.com/article/10.1007/s40998-023-00618-5">Paper</a>)'
+        ]
+      }
+    ]
+  },
+  {
+    name: 'Skills',
+    items: [
+      {
+        // title: 'Programming Languages',
+        // date: '2020 - 2021',
+        institution: 'Programming',
+        details: [
+          'Python, C++, JavaScript, TypeScript, Java, C#',
+          'PyTorch, TensorFlow, Keras, OpenCV, Scikit-learn, Pandas, NumPy',
+          'PostgreSQL, MySQL, MongoDB, SQLite',
+          'Windows, Debian/GNU Linux',
+          'Web developement'
         ]
       }
     ]
@@ -98,23 +115,7 @@ const resumeItems = ref([
       }
     ]
   },
-  {
-    name: 'Skills',
-    items: [
-      {
-        // title: 'Programming Languages',
-        // date: '2020 - 2021',
-        institution: 'Programming',
-        details: [
-          'Python, C++, JavaScript, TypeScript, Java, C#',
-          'PyTorch, TensorFlow, Keras, OpenCV, Scikit-learn, Pandas, NumPy',
-          'PostgreSQL, MySQL, MongoDB, SQLite',
-          'Windows, Debian/GNU Linux',
-          'Web developement'
-        ]
-      }
-    ]
-  }
+  
 ]);
 </script>
 

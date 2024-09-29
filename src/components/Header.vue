@@ -23,7 +23,7 @@
                 id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static"
                 aria-label="Toggle theme (light)">
                 <i class="bi bi-sun-fill my-1 theme-icon-active"></i>
-                <span class="d-lg-none ms-2" id="bd-theme-text">Toggle theme</span>
+                <span class="d-lg-none ms-2" id="bd-theme-text">Theme</span>
               </button>
               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text" data-bs-popper="static">
                 <li>
