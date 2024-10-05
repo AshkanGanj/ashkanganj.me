@@ -106,7 +106,7 @@ const resumeItems = ref([
       {
         title: 'Teaching Assistant',
         date: 'Sep, 2021 - Dec, 2022',
-        institution: 'University of Mohaghegh Ardabil (UMA), Iran',
+        institution: 'University of Mohaghegh Ardabil (UMA), IR',
         details: [
           'Algorithm and Data Structure',
           'Software Engineering',
