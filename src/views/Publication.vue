@@ -87,7 +87,7 @@ export default {
           authors: ["Ashkan Ganj", "Hang Su", "Tian Guo"],
           award: "",
           // arxiv: "https://arxiv.org/pdf/2310.14437.pdf",
-          link: "/",
+          link: "files/ISMAR-Poster.pdf",
           // website: "",
           // github: "https://github.com/cake-lab/Mobile-AR-Depth-Estimation",
         },
