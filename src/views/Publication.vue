@@ -77,6 +77,20 @@ export default {
   data() {
     return {
       publications: [
+      {
+          title: "Hybrid Depth: Robust Depth Fusion By Leveraging Depth from Focus and Single-Image Priors",
+          img: "/img/papers/WACV25.png",
+          date: "Feb-2025",
+          venue: "WACV'25",
+          journal:
+            "Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)",
+          authors: ["Ashkan Ganj", "Hang Su", "Tian Guo"],
+          award: "",
+          arxiv: "https://arxiv.org/pdf/2407.18443",
+          // link: "files/ISMAR-Poster.pdf",
+          // website: "",
+          github: "https://github.com/cake-lab/HybridDepth/",
+        },
         {
           title: "Toward Robust Depth Fusion for Mobile AR With Depth from Focus and Single-Image Priors",
           img: "/img/papers/ISMAR-pic.png",
@@ -89,7 +103,7 @@ export default {
           // arxiv: "https://arxiv.org/pdf/2310.14437.pdf",
           link: "files/ISMAR-Poster.pdf",
           // website: "",
-          // github: "https://github.com/cake-lab/Mobile-AR-Depth-Estimation",
+          github: "https://github.com/cake-lab/HybridDepth/",
         },
         {
           title: "Toward In-Context Environment Sensing for Mobile Augmented Reality",

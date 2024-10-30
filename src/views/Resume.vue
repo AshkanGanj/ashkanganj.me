@@ -33,11 +33,11 @@ const resumeItems = ref([
     name: 'Education',
     items: [
       {
-        title: 'Master of Computer Science',
-        date: 'Jan, 2023 - Dec, 2024(Expected)',
+        title: 'Ph.D. in Computer Science',
+        date: 'Jan, 2023 - Present',
         institution: 'Worcester Polytechnic Institute (WPI), USA',
         details: [
-          'Project: Depth Estimation for Mobile AR Applications using camera feature.',
+          // 'Project: Depth Estimation for Mobile AR Applications using camera feature.',
           // 'Advisor: <a href="https://tianguo.info/">Prof. Tian Guo</a>'
         ]
       },
