@@ -101,7 +101,7 @@ export default {
           authors: ["Ashkan Ganj", "Hang Su", "Tian Guo"],
           award: "",
           // arxiv: "https://arxiv.org/pdf/2310.14437.pdf",
-          link: "files/ISMAR-Poster.pdf",
+          link: "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10765280",
           // website: "",
           github: "https://github.com/cake-lab/HybridDepth/",
         },
