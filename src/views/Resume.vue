@@ -74,7 +74,7 @@ const resumeItems = ref([
     items: [
       {
         title: 'Research Assistant',
-        date: 'Jan, 2024 - Present',
+        date: 'Jan, 2023 - Present',
         institution: 'Worcester Polytechnic Institute (WPI) , USA',
         details: [
           'PI: Prof. <a href="https://tianguo.info/">Tian Guo</a>',
