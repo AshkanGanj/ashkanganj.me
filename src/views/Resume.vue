@@ -74,12 +74,11 @@ const resumeItems = ref([
     items: [
       {
         title: 'Research Assistant',
-        date: 'Jun, 2024 - Present',
+        date: 'Jan, 2024 - Present',
         institution: 'Worcester Polytechnic Institute (WPI) , USA',
         details: [
           'PI: Prof. <a href="https://tianguo.info/">Tian Guo</a>',
-          'Project: Depth Estimation for Mobile AR Applications using camera feature.',
-          'Designing and implementing AR systems.',
+          'Working on designing computer vision systems for real world applications such as mobile AR.',
         ]
       },
       
