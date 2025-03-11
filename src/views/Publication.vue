@@ -81,7 +81,7 @@ export default {
           title: "Hybrid Depth: Robust Depth Fusion By Leveraging Depth from Focus and Single-Image Priors",
           img: "/img/papers/WACV25.png",
           date: "Feb-2025",
-          venue: "WACV'25",
+          venue: "(Oral) WACV'25",
           journal:
             "Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)",
           authors: ["Ashkan Ganj", "Hang Su", "Tian Guo"],
